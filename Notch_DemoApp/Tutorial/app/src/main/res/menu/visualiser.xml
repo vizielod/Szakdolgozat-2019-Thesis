@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_open"
+        android:icon="@drawable/ic_folder_open_white_36dp"
+        android:title="@string/open"
+        android:visible="true"
+        android:orderInCategory="50"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/pin_to_center"
+        android:title="@string/pin_to_centre"
+        android:checkable="true"
+        android:checked="false"
+        android:enabled="true"
+        android:visible="true"
+        android:orderInCategory="150"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/highlight_bones"
+        android:title="@string/highlight_bones"
+        android:checkable="true"
+        android:checked="false"
+        android:enabled="true"
+        android:orderInCategory="250"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/show_angles"
+        android:title="Show angles"
+        android:checkable="true"
+        android:checked="true"
+        android:enabled="true"
+        android:orderInCategory="350"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/export_angles"
+        android:title="Export angles"
+        android:enabled="true"
+        android:orderInCategory="400"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\debug\shaders"/></dataSet></merger>

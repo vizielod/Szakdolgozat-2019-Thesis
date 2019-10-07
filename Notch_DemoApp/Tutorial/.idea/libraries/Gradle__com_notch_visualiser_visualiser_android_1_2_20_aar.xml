@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.notch.visualiser:visualiser-android:1.2.20@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/51f78c154c3147abe9a93969bf3ae8e5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/51f78c154c3147abe9a93969bf3ae8e5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

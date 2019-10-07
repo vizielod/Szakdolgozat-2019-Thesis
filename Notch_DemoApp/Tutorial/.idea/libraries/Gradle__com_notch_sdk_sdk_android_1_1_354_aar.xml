@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.notch.sdk:sdk-android:1.1.354@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00d0a00320148979f6c51a950bac72ee/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00d0a00320148979f6c51a950bac72ee/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

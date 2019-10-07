@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent">
+
+    <TextView
+        android:id="@+id/device_list"
+        android:text="Device list:"
+        android:textColor="@color/blue"
+        android:textSize="16dp"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_below="@id/device_list"
+        android:id="@+id/current_network"
+        android:text="Current network:"
+        android:textColor="@color/blue"
+        android:textSize="16dp"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_below="@id/current_network"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/menu_list"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/new_title"
+                android:text="CURRENT LICENSE:\nUNKNOWN"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btn_set_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Set license">
+            </Button>
+
+            <TextView
+                android:id="@+id/device_management_txt"
+                android:text="\nDEVICE MANAGEMENT"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btn_pair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Pair new device">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_sync_pair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Sync Pairing">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Remove all device">
+            </Button>
+
+            <TextView
+                android:id="@+id/selected_channel_txt"
+                android:text="Selected channel"
+                android:textColor="@color/blue"
+                android:textSize="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btn_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Connect to network">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_disconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Disconnect">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_shutdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Shutdown">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_erase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Erase devices">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_change_channel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Change channel">
+            </Button>
+
+            <TextView
+                android:id="@+id/calibration_txt"
+                android:text="\nCALIBRATION"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btn_unchecked_init"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Unchecked Init">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_configure_calib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Configure calibration">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_calibrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Start calibration">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_get_calibration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Get calibration data">
+            </Button>
+
+            <TextView
+                android:id="@+id/steady_txt"
+                android:text="\nSTEADY"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btn_init_3_steady"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="3 notch init">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_configure_steady"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Configure steady">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_steady"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Start steady">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_get_steady"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Get steady data">
+            </Button>
+
+            <TextView
+                android:id="@+id/capture_txt"
+                android:text="\nCAPTURE"
+                android:textColor="@color/blue"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <CheckBox
+                android:layout_alignParentLeft="true"
+                android:id="@+id/chk_realtime"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="Real-time"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_init_3_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="3 notch init">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_configure_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Configure 2 sec capture">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Capture 2 sec">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Download">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_post_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="16dp"
+                android:text="Post-download">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_visualize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="16dp"
+                android:text="Visualize  ">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_show_example"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="16dp"
+                android:text="Show example">
+            </Button>
+
+         </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:background="@color/gray"
+        android:id="@+id/counter_text"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.25" />
+
+        <ImageView
+            android:id="@+id/dock_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:adjustViewBounds="true"
+            android:rotation="180"
+            android:scaleType="fitCenter"
+            android:src="@drawable/c0000" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

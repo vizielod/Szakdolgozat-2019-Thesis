@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android_VR_Game_using_Notches/Android_VR_Game_using_Notches.iml" filepath="$PROJECT_DIR$/Android_VR_Game_using_Notches/Android_VR_Game_using_Notches.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tutorial.iml" filepath="$PROJECT_DIR$/Tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

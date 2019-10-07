@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progress_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/notch_progressbar"
+        />
+
+    <com.wearnotch.notchdemo.visualiser.TouchGLView
+        android:id="@+id/surface_view"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/angles_text"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/view_buttons"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/button_top_view"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_top_view"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/button_front_view"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_front_view"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/button_side_view"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_side_view"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/button_show_path"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_path"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:visibility="visible"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/control_bar"
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:layout_gravity="bottom"
+        android:layout_alignBottom="@id/surface_view"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/button_start"
+            android:background="@color/transparent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_backward"
+            android:layout_width="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/button_play_pause"
+            android:background="@color/transparent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_pause"
+            android:layout_width="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/button_speed"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_clock"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:paddingLeft="30dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/speed_text"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:text="1x"/>
+
+        <ImageButton
+            android:id="@+id/button_end"
+            android:background="@color/transparent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_forward"
+            android:layout_width="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:progressDrawable="@drawable/yellow_scrubber_progress"
+            android:thumb="@drawable/yellow_scrubber_control"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:layout_height="60dp"
+            android:minHeight="60dp"
+            android:maxHeight="60dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/elapsed_time_txt"
+        android:layout_above="@id/control_bar"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:text="Elapsed time: 0 sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.application'
+
+project.ext.modelAssetsDir = new File((File) project.buildDir, '../src/main/assets')
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    flavorDimensions 'default'
+
+    defaultConfig {
+        applicationId 'com.wearnotch.notchdemo.tutorial'
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 9
+        versionName '1.8'
+
+        multiDexEnabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        debug {
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+configurations {
+    appConfig
+}
+
+dependencies {
+    implementation 'com.notch.sdk:sdk-android:1.1.355'
+    appConfig 'com.notch.sdk:sdk-android:1.1.355'
+
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.afollestad.material-dialogs:core:0.9.0.1'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(path: ':Android_VR_Game_using_Notches')
+}
+
+task convertObj(type: JavaExec) {
+    ext.srcFile1 = file('../model/equipment_tutorial.obj')
+    ext.srcFile2 = file('../model/equipment_tutorial.js')
+    inputs.files files(srcFile1,srcFile2)
+    outputs.dir project.modelAssetsDir
+
+    main = 'com.wearnotch.visualiserutil.ObjConverter'
+    classpath = configurations.appConfig
+    args = [ srcFile1.getAbsolutePath(), srcFile2.getAbsolutePath(),
+             new File((File) project.modelAssetsDir, 'equipment.dat').getAbsolutePath() ]
+}
+
+task convertMtl(type: JavaExec) {
+    ext.srcFile = file('../model/equipment_tutorial.mtl')
+    inputs.file srcFile
+    outputs.dir project.modelAssetsDir
+
+    main = 'com.wearnotch.visualiserutil.MtlConverter'
+    classpath = configurations.appConfig
+    args = [ srcFile.getAbsolutePath(),
+             new File((File) project.modelAssetsDir, 'equipment_mtl.dat').getAbsolutePath() ]
+}
+
+project.afterEvaluate {
+    project.tasks.findAll {
+        it.name.startsWith('generate') && it.name.endsWith('Assets')
+    }.each {
+        it.dependsOn convertObj
+        it.dependsOn convertMtl
+    }
+}
+

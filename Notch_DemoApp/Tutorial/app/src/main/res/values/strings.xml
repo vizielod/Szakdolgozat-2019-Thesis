@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notch Tutorial App</string>
+
+    <string name="status_cancelled">Operation cancelled!</string>
+    <string name="status_internal_error">Internal error happened! Code: %1$s</string>
+
+    <string name="error_invalid_measurement">Invalid measurement!</string>
+    <string name="error_bluetooth">Bluetooth error!</string>
+    <string name="error_bluetooth_disabled">Bluetooth disabled!</string>
+    <string name="error_disconnected">Notch disconnected!</string>
+    <string name="error_no_notches">No Notch devices found! Retry scanning!</string>
+    <string name="error_timeout">Timeout while communicating with the Notch devices! Please try again!</string>
+    <string name="error_io">IO Error</string>
+    <string name="error_skeleton">Error while loading skeleton!</string>
+    <string name="error_meas_list">Error while loading measurement list!</string>
+    
+    <string name="open">Open</string>
+    <string name="pin_to_centre">Root bone in centre</string>
+    <string name="highlight_bones">Highlight bones</string>
+
+</resources>

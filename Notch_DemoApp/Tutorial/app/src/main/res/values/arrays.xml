@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="feature_array">
+        <item>Spine bend angle</item>
+        <item>Knee flex angles</item>
+        <item>Elbow flex angles</item>
+    </string-array>
+</resources>

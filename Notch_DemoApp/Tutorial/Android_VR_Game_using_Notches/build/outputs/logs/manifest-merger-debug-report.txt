@@ -1,0 +1,151 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:2:70-115
+		INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+		INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:2:1-25:12
+		INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:2:116-162
+	android:versionCode
+		INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:2:1-25:12
+		INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:2:163-203
+supports-screens
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:3:3-163
+	android:largeScreens
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:3:78-105
+	android:smallScreens
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:3:21-48
+	android:normalScreens
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:3:49-77
+	android:xlargeScreens
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:3:106-134
+	android:anyDensity
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:3:135-160
+application
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:4:3-16:17
+activity#com.unity3d.AndroidGameUsingNotches.UnityPlayerActivity
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:5:5-11:16
+	android:screenOrientation
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:5:48-86
+	android:label
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:5:15-47
+	android:launchMode
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:5:87-118
+	android:hardwareAccelerated
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:5:301-336
+	android:configChanges
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:5:119-300
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:5:337-407
+intent-filter#category:name:android.intent.category.LEANBACK_LAUNCHER
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:6:7-8:23
+category#android.intent.category.LEANBACK_LAUNCHER
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:7:3-72
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:7:13-69
+meta-data#unityplayer.UnityActivity
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:9:7-82
+	android:value
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:9:59-79
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:9:18-58
+meta-data#android.notch_support
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:10:7-78
+	android:value
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:10:55-75
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:10:18-54
+meta-data#unity.build-id
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:12:5-101
+	android:value
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:12:46-98
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:12:16-45
+meta-data#unity.splash-mode
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:13:5-69
+	android:value
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:13:49-66
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:13:16-48
+meta-data#unity.splash-enable
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:14:5-74
+	android:value
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:14:51-71
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:14:16-50
+meta-data#notch.config
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:15:5-81
+	android:value
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:15:44-78
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:15:16-43
+uses-feature#0x00020000
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:17:3-52
+	android:glEsVersion
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:17:17-49
+uses-feature#android.hardware.vulkan
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:18:3-83
+	android:required
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:18:56-80
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:18:17-55
+uses-permission#android.permission.INTERNET
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:19:3-65
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:19:20-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:20:3-78
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:20:20-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:21:3-77
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:21:20-75
+uses-feature#android.hardware.touchscreen
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:22:3-88
+	android:required
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:22:61-85
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:22:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:23:3-99
+	android:required
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:23:72-96
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:23:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:24:3-108
+	android:required
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:24:81-105
+	android:name
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:24:17-80
+uses-sdk
+INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+		INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
+		INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml
