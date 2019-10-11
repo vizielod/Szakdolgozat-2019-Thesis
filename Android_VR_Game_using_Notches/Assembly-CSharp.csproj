@@ -63,32 +63,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\PluginWrapper.cs" />
+    <Compile Include="Assets\Scripts\CollisionDetection.cs" />
+    <Compile Include="Assets\Scripts\Patrol.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Project/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Project/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Project/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Android_VR_Game_using_Notches/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Project/Android_VR_Game_using_Notches/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Project/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Project/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Project/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Project/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Android_VR_Game_using_Notches/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Project/Android_VR_Game_using_Notches/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/Unity/2019.2.7f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
