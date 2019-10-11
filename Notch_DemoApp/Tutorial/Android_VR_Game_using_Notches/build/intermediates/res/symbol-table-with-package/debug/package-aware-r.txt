@@ -92,7 +92,6 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
-id placeholder_text
 id right
 id right_icon
 id right_side
@@ -108,8 +107,6 @@ id title
 id top
 integer cancel_button_image_alpha
 integer status_bar_notification_info_maxnum
-layout fragment_blank
-layout fragment_blank_fragment2
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -131,7 +128,6 @@ mipmap ic_launcher_background
 mipmap ic_launcher_foreground
 string app_name
 string game_view_content_description
-string hello_blank_fragment
 string status_bar_notification_info_overflow
 style BaseUnityTheme
 style TextAppearance_Compat_Notification
