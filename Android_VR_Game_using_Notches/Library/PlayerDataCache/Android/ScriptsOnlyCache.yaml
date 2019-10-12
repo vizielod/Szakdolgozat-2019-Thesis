@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - CollisionDetection
     - Patrol
     - PlayerMovement
+    - PlayerRotation
     - PluginWrapper
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
@@ -63,21 +64,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9670}
     - Class: 114
-      Script: {instanceID: 9820}
+      Script: {instanceID: 9818}
     - Class: 114
-      Script: {instanceID: 10226}
+      Script: {instanceID: 10224}
     - Class: 114
-      Script: {instanceID: 10502}
+      Script: {instanceID: 10500}
     - Class: 114
-      Script: {instanceID: 10572}
+      Script: {instanceID: 10570}
     - Class: 114
-      Script: {instanceID: 11002}
+      Script: {instanceID: 11000}
+    - Class: 114
+      Script: {instanceID: 11022}
     - Class: 114
       Script: {instanceID: 11306}
     - Class: 114
       Script: {instanceID: 11344}
     - Class: 114
-      Script: {instanceID: 13754}
+      Script: {instanceID: 22540}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -431,6 +434,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: cc794d110bee3d525dec025756dcb13c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PluginWrapper
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -539,11 +548,11 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: bf41cd7f5c489a6fa468e8c64e8ab18a
+      Hash: 3f7d3eac3468685ef18425a40cd5b891
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PluginWrapper
+    className: PlayerRotation
   platform: 13
   scenePathNames:
   - Assets/Levels/VRGameScene_Level1.unity
-  playerPath: E:/Egyetem/V. ev/Szakdolgozat/Project/Android_VR_Game_using_Notches/Builds/TestBuild1.apk
+  playerPath: E:/Egyetem/V. ev/Szakdolgozat/Project/Notch_DemoApp/Tutorial

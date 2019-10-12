@@ -570,6 +570,9 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
     }
 
     private String RelativeNotchPosition;
+    private float ChestRotationAngle;
+    private float ChestAnteriorTiltAngle;
+    private float ChestLateralTiltAngle;
 
     // Calculate angles
     private void calculateAngles(int frameIndex) {
@@ -593,6 +596,10 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
         mData.calculateRelativeAngle(chest, root, frameIndex, chestAngles);
         //Log.i(LOGTAG, chestAngles.toString());
         RelativeNotchPosition = chestAngles.toString();
+        ChestAnteriorTiltAngle = chestAngles.get(0);
+        ChestRotationAngle = chestAngles.get(1);
+        ChestLateralTiltAngle = chestAngles.get(2);
+
 
         // Show angles
         StringBuilder sb = new StringBuilder();
@@ -912,10 +919,10 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
                     if (progress.getState() == NotchProgress.State.REALTIME_UPDATE) {
                         mData = (VisualiserData) progress.getObject();
 
-                        Log.i(LOGTAG, mData.toString());
+                        //Log.i(LOGTAG, mData.toString());
                         refreshAngles();
                         //calculateAngles(mFrameIndex);
-                        Log.i(LOGTAG, RelativeNotchPosition);
+                        //Log.i(LOGTAG, RelativeNotchPosition);
                         updateRealTime();
                     }
                 }
@@ -950,12 +957,18 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
         if (mUnityPlayerActivity == null) {
             unityIntent = new Intent(this, UnityPlayerActivity.class);
             unityIntent.putExtra("message", RelativeNotchPosition);
+            unityIntent.putExtra("ChestAnteriorTilt", ChestAnteriorTiltAngle);
+            unityIntent.putExtra("ChestRotation", ChestRotationAngle);
+            unityIntent.putExtra("ChestLateralTilt", ChestLateralTiltAngle);
             //unityIntent.putExtra("message", mData.toString());
             startActivity(unityIntent);
         }
         else {
             //unityIntent.putExtra("message", mData.toString());
             unityIntent.putExtra("message", RelativeNotchPosition);
+            unityIntent.putExtra("ChestAnteriorTilt", ChestAnteriorTiltAngle);
+            unityIntent.putExtra("ChestRotation", ChestRotationAngle);
+            unityIntent.putExtra("ChestLateralTilt", ChestLateralTiltAngle);
            // EventBus.getDefault().post(mData);
         }
     }

@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\CollisionDetection.cs" />
     <Compile Include="Assets\Scripts\Patrol.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerRotation.cs" />
     <Compile Include="Assets\Scripts\PluginWrapper.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Project/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

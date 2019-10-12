@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, 0);
+        input = new Vector3(Input.GetAxisRaw("Horizontal"), 0.0f, 0.0f);
         //rb.AddForce(input * moveSpeed, ForceMode.Force);
         rb.velocity = input * moveSpeed;
         /*if(Rigidbody.velocity.magnitude < maxSpeed)

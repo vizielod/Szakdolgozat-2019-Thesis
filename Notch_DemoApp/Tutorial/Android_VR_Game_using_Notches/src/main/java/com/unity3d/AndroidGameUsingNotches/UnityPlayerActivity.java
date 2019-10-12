@@ -46,11 +46,11 @@ public class UnityPlayerActivity extends Activity
         mUnityPlayer.requestFocus();
     }
 
-    private int i;
+    //private int i;
 
     public void javaTestFunc(String strFromUnity){
         Bundle bundle = getIntent().getExtras();
-        i++;
+        //i++;
         //String message = i + "" + bundle.getString("message");
         String message = bundle.getString("message");
         //mData = (VisualiserData) getIntent().getSerializableExtra(PARAM_INPUT_DATA);
@@ -58,7 +58,23 @@ public class UnityPlayerActivity extends Activity
         //UnityPlayer.UnitySendMessage("PluginScript", "SetText", message);
         //UnityPlayer.UnitySendMessage("PluginScript", "SetJavaLog", strFromUnity + "HelloWorld");
         UnityPlayer.UnitySendMessage("PluginScript", "SetJavaLog", message);
+        //Log.i(LOGTAG, strFromUnity + "javaTestFunc called");
     }
+
+    public void javaGetCoordFunc(String strFromUnity){
+        Bundle bundle = getIntent().getExtras();
+        float chestX_float = bundle.getFloat("ChestAnteriorTilt");
+        float chestY_float = bundle.getFloat("ChestRotation");
+        float chestZ_float = bundle.getFloat("ChestLateralTilt");
+        String chestX_str = String.valueOf(chestX_float);
+        String chestY_str = String.valueOf(chestY_float);
+        String chestZ_str = String.valueOf(chestZ_float);
+        UnityPlayer.UnitySendMessage("PluginScript", "SetAngleX", chestX_str);
+        UnityPlayer.UnitySendMessage("PluginScript", "SetAngleY", chestY_str);
+        UnityPlayer.UnitySendMessage("PluginScript", "SetAngleZ", chestZ_str);
+        //Log.i(LOGTAG, strFromUnity + "javaGetCoordFunc called");
+    }
+
 
     @Override protected void onNewIntent(Intent intent)
     {
@@ -98,6 +114,17 @@ public class UnityPlayerActivity extends Activity
         Bundle bundle = getIntent().getExtras();
         String message = bundle.getString("message");
         UnityPlayer.UnitySendMessage("PluginScript", "SetText", message);
+
+        float chestX_float = bundle.getFloat("ChestAnteriorTilt");
+        float chestY_float = bundle.getFloat("ChestRotation");
+        float chestZ_float = bundle.getFloat("ChestLateralTilt");
+        String chestX_str = String.valueOf(chestX_float);
+        String chestY_str = String.valueOf(chestY_float);
+        String chestZ_str = String.valueOf(chestZ_float);
+        UnityPlayer.UnitySendMessage("PluginScript", "SetAngleX", chestX_str);
+        UnityPlayer.UnitySendMessage("PluginScript", "SetAngleY", chestY_str);
+        UnityPlayer.UnitySendMessage("PluginScript", "SetAngleZ", chestZ_str);
+
         Log.i(LOGTAG, "UnityProject Intent Started");
     }
 
