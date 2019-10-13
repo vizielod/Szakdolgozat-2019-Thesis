@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CharacterMovement
     - CollisionDetection
     - Patrol
     - PlayerMovement
@@ -64,23 +65,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9670}
     - Class: 114
-      Script: {instanceID: 9818}
+      Script: {instanceID: 9776}
     - Class: 114
-      Script: {instanceID: 10224}
+      Script: {instanceID: 9820}
     - Class: 114
-      Script: {instanceID: 10500}
+      Script: {instanceID: 10022}
     - Class: 114
-      Script: {instanceID: 10570}
+      Script: {instanceID: 10228}
     - Class: 114
-      Script: {instanceID: 11000}
+      Script: {instanceID: 10504}
     - Class: 114
-      Script: {instanceID: 11022}
+      Script: {instanceID: 10574}
     - Class: 114
-      Script: {instanceID: 11306}
+      Script: {instanceID: 11004}
     - Class: 114
-      Script: {instanceID: 11344}
+      Script: {instanceID: 11026}
     - Class: 114
-      Script: {instanceID: 22540}
+      Script: {instanceID: 11310}
+    - Class: 114
+      Script: {instanceID: 11348}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -138,6 +141,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 3f7d3eac3468685ef18425a40cd5b891
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterMovement
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -222,6 +231,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 3f7d3eac3468685ef18425a40cd5b891
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerRotation
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -434,7 +449,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: cc794d110bee3d525dec025756dcb13c
+      Hash: 1cd70a49dea47f3a4b04e1b86af24cf8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PluginWrapper
@@ -546,12 +561,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 3f7d3eac3468685ef18425a40cd5b891
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerRotation
   platform: 13
   scenePathNames:
   - Assets/Levels/VRGameScene_Level1.unity

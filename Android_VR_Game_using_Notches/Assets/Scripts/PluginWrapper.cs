@@ -15,8 +15,8 @@ public class PluginWrapper : MonoBehaviour
     public Text chestY;
     public Text chestZ;
 
-    public Rigidbody rb;
-    public float rotationSpeed;
+    private Rigidbody rb;
+    public float rotationSpeed = 5f;
     private float angleX_f;
     private float angleY_f;
     private float angleZ_f;
@@ -32,6 +32,7 @@ public class PluginWrapper : MonoBehaviour
         return _instance;
     }
 
+    
     void Awake()
     {
         #if UNITY_ANDROID
@@ -39,7 +40,7 @@ public class PluginWrapper : MonoBehaviour
         curActivity = jc.GetStatic<AndroidJavaObject>("currentActivity");
 #endif
 
-        rb = (Rigidbody) GameObject.Find("Player").GetComponent<Rigidbody>();
+        rb = (Rigidbody) GameObject.Find("ZombieRig (2)/rig/hips/spine/chest").GetComponent<Rigidbody>();
 
         myText = (Text)GameObject.Find("Canvas/Text").GetComponent<Text>();
         chestX = (Text)GameObject.Find("Canvas/ChestX").GetComponent<Text>();
@@ -49,6 +50,7 @@ public class PluginWrapper : MonoBehaviour
         chestX.text = "chestX";
         chestY.text = "chestY";
         chestZ.text = "chestZ";
+        //rb = GetComponent<Rigidbody>();
 
     }
     // Use this for initialization
@@ -59,8 +61,10 @@ public class PluginWrapper : MonoBehaviour
         PluginWrapper.GetInstance().CallJavaFunc("javaTestFunc", "UnityJavaJarTest");
         PluginWrapper.GetInstance().CallJavaFunc("javaGetCoordFunc", "UnityJavaJarTest");
         Debug.Log("GO");
-        rotationSpeed = 50f; 
-        rb = GetComponent<Rigidbody>();
+        Debug.Log(rb);
+        //rotationSpeed = 50f; 
+        Debug.Log(rotationSpeed);
+        //rb = GetComponent<Rigidbody>();
         
     }
 
@@ -94,17 +98,16 @@ public class PluginWrapper : MonoBehaviour
     {
         PluginWrapper.GetInstance().CallJavaFunc("javaTestFunc", "UnityJavaJarTest");
         PluginWrapper.GetInstance().CallJavaFunc("javaGetCoordFunc", "UnityJavaJarTest");
-        inputRotation = new Vector3(angleX_f, angleY_f, angleZ_f);
-        Quaternion deltaRotation = Quaternion.Euler(inputRotation * Time.deltaTime * rotationSpeed);
-        rb.MoveRotation(rb.rotation * deltaRotation);
     }
 
-    /*private void FixedUpdate()
+    private void FixedUpdate()
     {
-        inputRotation = new Vector3(angleX_f, angleY_f, angleZ_f);
-        Quaternion deltaRotation = Quaternion.Euler(inputRotation * Time.deltaTime * rotationSpeed);
-        rb.MoveRotation(rb.rotation * deltaRotation);
-    }*/
+        inputRotation = new Vector3(angleX_f, angleY_f, -angleZ_f);
+        /*Quaternion deltaRotation = Quaternion.Euler(inputRotation * Time.deltaTime * rotationSpeed);
+        rb.MoveRotation(rb.rotation * deltaRotation);*/
+        rb.transform.Rotate(inputRotation * Time.deltaTime/* * rotationSpeed*/);
+    }
+
     void DefaultText()
     {
         SetText("DEFAULT");
@@ -129,6 +132,21 @@ public class PluginWrapper : MonoBehaviour
     {
         chestZ.text = z;
         angleZ_f = float.Parse(z, CultureInfo.InvariantCulture);
+    }
+
+    public float getAngleX()
+    {
+        return angleX_f;
+    }
+
+    public float getAngleY()
+    {
+        return angleY_f;
+    }
+
+    public float getAngleZ()
+    {
+        return angleZ_f;
     }
 
 
