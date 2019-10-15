@@ -54,7 +54,7 @@ public class CharacterMovement : MonoBehaviour
         x = pw_instance.getAngleX();
         y = pw_instance.getAngleY();
         z = pw_instance.getAngleZ();
-        inputRotation = new Vector3(x, -y, -z);
+        inputRotation = new Vector3(x, y, -z);
         //Quaternion deltaRotation = Quaternion.Euler(inputRotation * Time.deltaTime * rotationSpeed);
         //rb_character.MoveRotation(rb_character.rotation * deltaRotation);
         rb_character.transform.Rotate(inputRotation * Time.deltaTime);

@@ -68,4 +68,15 @@ public class PlayerRotation : MonoBehaviour
     {
         return rb.rotation;
     }
+
+    public float GetRotationSpeed()
+    {
+        return rotationSpeed;
+    }
+
+    public void SetRotationSpeed(float newRotationSpeed)
+    {
+        rotationSpeed = newRotationSpeed;
+    }
+
 }

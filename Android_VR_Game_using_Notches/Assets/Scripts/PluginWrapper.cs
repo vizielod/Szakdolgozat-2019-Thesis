@@ -98,6 +98,8 @@ public class PluginWrapper : MonoBehaviour
     {
         PluginWrapper.GetInstance().CallJavaFunc("javaTestFunc", "UnityJavaJarTest");
         PluginWrapper.GetInstance().CallJavaFunc("javaGetCoordFunc", "UnityJavaJarTest");
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
     }
 
     private void FixedUpdate()

@@ -44,6 +44,15 @@ public class Patrol : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, patrolPoints[currentPoint].position, moveSpeed * Time.deltaTime);*/
     }
 
+    public float GetMoveSpeed()
+    {
+        return moveSpeed;
+    }
+    public void SetMoveSpeed(float newMoveSpeed)
+    {
+        moveSpeed = newMoveSpeed;
+    }
+
     /*void OnCollisionEnter(Collision other)
     {
         if (other.transform.tag == "Player")

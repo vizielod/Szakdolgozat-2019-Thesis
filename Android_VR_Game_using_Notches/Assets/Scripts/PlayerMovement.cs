@@ -29,4 +29,13 @@ public class PlayerMovement : MonoBehaviour
             Rigidbody.AddForce(input * moveSpeed);
         }*/
     }
+
+    public float GetMoveSpeed()
+    {
+        return moveSpeed;
+    }
+    public void SetMoveSpeed(float newMoveSpeed)
+    {
+        moveSpeed = newMoveSpeed;
+    }
 }

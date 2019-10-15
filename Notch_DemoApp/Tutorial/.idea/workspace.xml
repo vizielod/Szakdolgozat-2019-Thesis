@@ -11,16 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7f2f133-b13a-4f6f-a83e-ec8ac94c1247" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/.vs/Android_VR_Game_using_Notches/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/.vs/Android_VR_Game_using_Notches/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/.vs/Android_VR_Game_using_Notches/v15/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/.vs/Android_VR_Game_using_Notches/v15/Server/sqlite3/storage.ide" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/.vs/Android_VR_Game_using_Notches/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/.vs/Android_VR_Game_using_Notches/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/.vs/Android_VR_Game_using_Notches/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/.vs/Android_VR_Game_using_Notches/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Assets/Levels/VRGameScene_Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Assets/Levels/VRGameScene_Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Assets/Scripts/PlayerRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Assets/Scripts/PlayerRotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Assets/Scripts/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Assets/Scripts/CharacterMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Assets/Scripts/PluginWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Assets/Scripts/PluginWrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/LastBuild.buildreport" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/LastBuild.buildreport" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/Managed/Assembly-CSharp.pdb" afterDir="false" />
@@ -29,10 +23,7 @@
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/Managed/UnityEngine.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/boot.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/globalgamemanagers.assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/Data/sharedassets0.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/ScriptsOnlyCache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/PlayerDataCache/Android/ScriptsOnlyCache.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
@@ -49,89 +40,45 @@
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/StateCache/Hierarchy/77e54b-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/StateCache/Hierarchy/77e54b-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/StateCache/SceneView/e27b93-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/StateCache/SceneView/e27b93-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/0AE9793DB5CEF0976EDF3E3EDF03FA7E.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/1EB13812D272B8C575D02E2A1B60217D.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/1F42A5417D1DDF0CD9476C7B6EE8B985.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/206CF6D86368060C0D01887153FEDB46.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/39B9C150D9B8F1C4C84805FA1BC35581.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/414044AB6AABE23F44102FFAA65900F0.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/436E861A8B8CAA75EECBB8B4077E1CCC.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/44934BA5BF5C0494341929D9B34E4377.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/4C383AD4349FE9837FDFF816E7BC7569.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/50CB71329B32344EC0E134CBF95ABB27.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/5CEB3F24BA7DEF7523AF75D1B16907C4.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/5FF3AC9BF5768BCE440337ABDE6BC96B.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/70498B69A29333F9968C9E14DC76935F.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/716CEA0B64A918EB39783F7BB3FFCC41.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/7DD1193191E9D0E6D236924626C7D113.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/8070DA99EFBF86C2EB35645E7125D0B0.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/84083CBF73EC55C7BE6CC951189E6824.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/85129F1FF442A3F23A1B9B4B7A9C2924.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/9484E9D00061B990670CB8EFE81BE2E4.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/A3C4A21E47AEA82FEAEDDB568B08E1AC.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/A404D0471E9D236DB52A3F2BCA26D132.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/BA3893FABFDF29B95A5F216F79CCB0E7.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/C0C890C2436423253D0053B2FF83C515.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/C8BC74468511FDE11C17F0773B2CF071.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/D3CAD184EC94BA7511115E867FC215C2.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/E611C213F7E1B605154E8DF941FB22AA.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/E8A1F6F59A6873F1366D23A2FB135972.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/ED01971E2EADF4913F8785DEB6EC39FD.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/EFC531E7E035EAAFD0047721D7BBC170.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/F304BBE174307803D9DA079EABA2C398.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/F7B75AC2820129CDD124D260E928D6F0.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/FBB6F6F78EB9A1ADF79C91E14A53D05D.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/linkresult_686AEF4213F0EFBE0AB0845487D1CADC/libil2cpp.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/12A1E3CA1E9CE0A407739171AA1BA1F6.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/15C3DF2C25AB8E6A939603BD81E5320A.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/20C98B88590A3288D4DE7B7F55D01AF9.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/2C3A5AD5D9E0C8A7BA4CD24A40C884A4.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/30FE990D1EF6BC8B5A20A883400B5402.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/3C9AB1A882BA08F766FB327045E7261E.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/476A6CB0165A1D1D801912CFC81879A4.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/488113FB7BBF5CEC9618E43771E213CC.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/5EF7E2C9111152743D60B83FC5CC5A57.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/647E7A0E82BC680BD1B42377923CB809.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/6DBAA8AF4514B21E4E253E8C311424BB.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/74E097517E055A2919E0DAE4746C7C45.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/760971E20FC7C16494F5FB1CBBECF264.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/7F65BD6CA009446F9F5988D4D9169BF4.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/83B9E7F7959AA78AB03108622EA780C7.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/870968C11B9FDDA9F1314881337BFF2E.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/9C038BE015E2BA62C38C1A1543821181.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/AB7BAA39989A47ED53AB3AEFE0B4D44B.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/ADC253B286CB3ACA7156D04F7E77F5B0.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/BDA77B11DB43822B72C9E119C69E5817.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/C08F2601FAE3BD246E975E58A1D48491.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/C70677D17D991E65BC4C3CB290449D08.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/CB4632D5F3DA633F3CC7572D73AF474E.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/D20E0A0A2E6FF91BEA475F77AC681782.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/D99B68E3A6630D4574FEC988E41081ED.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/DACBD2C73F5849B05DBDBF5B8D3D0FE9.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/DEE002C45E326686F8C2518D4AF24B11.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/EB7F47B209469EB626FC9BCAB95E05E5.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/ECA1D5DE03DD2EAD0D7C276ED84927FA.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/F5D201B6611A0EAF7360CDDC89818CCA.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/F6C9DCDC4225A8E6CCF849BC26E9EDAA.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/F76125F79071ACAB2091A5CA096D00A8.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/linkresult_6F9475E86A787518580F1AF57E9E2524/libil2cpp.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/52AA5346771273004673720B43CA77DC.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/5760F9444B60F4ED489DD2B53B520DE8.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/5B1C1BF6BCB36B1655BF32437C1AF762.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/801249F345FB5C86390CF19AD6786C05.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/920D7E9C4A2D49DF785A05B4CE59126B.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/921BB1DBFC3FE25CB821424AE3BE33DC.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/98D2C3B80E418C8F133A15D3429EA0BF.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/A88017BBC7375F244CA0CEFE51706864.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/B06B0B27B068CDE785E3FDA2F2F1D1CD.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/CBFB695708E9875E94E5741ADC1218D7.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/D1778F3991B72452E038DFFAEEC4BB2A.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/F470634C4673FE7413F3E20A3E5DC667.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_arm64-v8a/il2cpp_cache/linkresult_487CF598B97FDB703E362771FD224CA1/libil2cpp.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/0D93F94E4A8F440B466273405D1FFF7A.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/28876A9266218127B397679E1F34548D.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/31473C80F698C5A73D51E27472B48E3B.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/33481252A4933DD68239BB36F3A22580.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/3F457949E26C160054F4E16B52F8C11E.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/53881B953E74F9A78DB6769AFE0C8110.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/8E3B3113581D2BBBB91F6896DF7B081D.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/A3CE7A9E2503F83B3BEACFDFD55F15EB.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/B19D1DA15AE20AC373EB11889D046045.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/B45884F7A9A9F6E4EF429E0D72D90CB3.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/BE101895A715B8208DE8F7A6A2EFD669.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/FB2116A7F491BAED9C2F1F8FD428B281.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/il2cpp_android_armeabi-v7a/il2cpp_cache/linkresult_B5632F55CAACB392826313697E96C466/libil2cpp.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/metadata/0c/0c9eee7c8ae24f840ab9ccd443c1563c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/metadata/0c/0c9eee7c8ae24f840ab9ccd443c1563c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/metadata/51/51982723a4c85e64e8a39106d84759c2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/metadata/51/51982723a4c85e64e8a39106d84759c2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/Library/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android_VR_Game_using_Notches/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/intermediate-jars/debug/jni/arm64-v8a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/intermediate-jars/debug/jni/arm64-v8a/libil2cpp.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/intermediate-jars/debug/jni/arm64-v8a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/intermediate-jars/debug/jni/arm64-v8a/libunity.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/intermediate-jars/debug/jni/armeabi-v7a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/intermediate-jars/debug/jni/armeabi-v7a/libil2cpp.so" afterDir="false" />
@@ -139,22 +86,7 @@
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/Managed/Metadata/global-metadata.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/Managed/Metadata/global-metadata.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/boot.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/globalgamemanagers.assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split0" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split1" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split10" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split10" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split11" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split12" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split13" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split13" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split2" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split3" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split4" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split5" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split6" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split7" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split8" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split9" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/library_assets/debug/out/bin/Data/sharedassets0.assets.split9" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/merged_jni_libs/debug/out/arm64-v8a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/merged_jni_libs/debug/out/arm64-v8a/libil2cpp.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/merged_jni_libs/debug/out/arm64-v8a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/merged_jni_libs/debug/out/arm64-v8a/libunity.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/merged_jni_libs/debug/out/armeabi-v7a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/build/intermediates/merged_jni_libs/debug/out/armeabi-v7a/libil2cpp.so" afterDir="false" />
@@ -170,22 +102,7 @@
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/Managed/Metadata/global-metadata.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/Managed/Metadata/global-metadata.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/boot.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/globalgamemanagers.assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split0" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split1" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split10" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split10" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split11" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split11" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split12" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split13" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split13" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split2" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split3" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split4" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split5" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split6" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split7" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split8" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split9" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/assets/bin/Data/sharedassets0.assets.split9" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/jniLibs/arm64-v8a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/jniLibs/arm64-v8a/libil2cpp.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/jniLibs/arm64-v8a/libunity.so" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/jniLibs/arm64-v8a/libunity.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/jniLibs/armeabi-v7a/libil2cpp.so" beforeDir="false" afterPath="$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/jniLibs/armeabi-v7a/libil2cpp.so" afterDir="false" />
@@ -215,7 +132,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Android_VR_Game_using_Notches/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
+            <state relative-caret-position="1581">
               <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
             </state>
           </provider>
@@ -278,7 +195,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wearnotch/notchdemo/visualiser/VisualiserActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
+            <state relative-caret-position="15079">
               <caret line="969" column="70" selection-start-line="969" selection-start-column="70" selection-end-line="969" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -290,8 +207,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/java/com/unity3d/AndroidGameUsingNotches/UnityPlayerActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="391">
+              <caret line="51" column="48" lean-forward="true" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1146#1147#0" expanded="true" />
@@ -374,18 +291,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Tutorial" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -481,6 +386,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Tutorial" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -553,6 +469,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -697,6 +614,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17377399" />
@@ -914,7 +832,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Android_VR_Game_using_Notches/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
+        <state relative-caret-position="1581">
           <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
         </state>
       </provider>
@@ -963,7 +881,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wearnotch/notchdemo/visualiser/VisualiserActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
+        <state relative-caret-position="15079">
           <caret line="969" column="70" selection-start-line="969" selection-start-column="70" selection-end-line="969" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -973,8 +891,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Android_VR_Game_using_Notches/src/main/java/com/unity3d/AndroidGameUsingNotches/UnityPlayerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="391">
+          <caret line="51" column="48" lean-forward="true" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1146#1147#0" expanded="true" />
