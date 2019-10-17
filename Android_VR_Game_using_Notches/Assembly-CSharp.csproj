@@ -64,11 +64,16 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CharacterMovement.cs" />
     <Compile Include="Assets\Scripts\CollisionDetection.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Old_CollisionDetection.cs" />
     <Compile Include="Assets\Scripts\Patrol.cs" />
+    <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerRotation.cs" />
     <Compile Include="Assets\Scripts\PluginWrapper.cs" />
     <Compile Include="Assets\Scripts\PrefabCollisionDetection.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Wall_Patrol.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/Egyetem/V. ev/Szakdolgozat/Project/Android_VR_Game_using_Notches/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

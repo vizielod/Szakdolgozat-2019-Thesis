@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Patrol : MonoBehaviour
@@ -10,6 +11,8 @@ public class Patrol : MonoBehaviour
     public float moveSpeed;
 
     public GameObject crashParticles;
+
+    public GameObject wall;
 
     //private int currentPoint;
 
@@ -27,7 +30,9 @@ public class Patrol : MonoBehaviour
         //If the wall doesn't hit the player will reach the destination position, in which case it will respawn at the spawning position.
         if (transform.position == wallDestinationPosition.position)
         {
-            transform.position = wallSpawnPosition.position;
+            //transform.position = wallSpawnPosition.position;
+            Destroy(this.gameObject);
+
         }
         transform.position = Vector3.MoveTowards(transform.position, wallDestinationPosition.position, moveSpeed * Time.deltaTime);
         /*if(transform.position == patrolPoints[currentPoint].position)
