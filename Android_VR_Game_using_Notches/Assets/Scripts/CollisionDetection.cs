@@ -22,20 +22,31 @@ public class CollisionDetection : MonoBehaviour
     // Start is called before the first frame update
     private float originalMoveSpeed;
 
+    private PlayerManager playerManager;
     private GameObject player;
     private bool doCrashParticleEffect;
+    //private bool playerRespawned = true;
 
     void Start()
     {
-
+        //Instantiating the Player Prefab. PrefabUtility works fine but only in Unity Editor.
+        //DisableRagdoll is needed to set bodyparts to Kinematic, some adjustments will be a must
+        //in the future, when i want to set the elbow notches, since right now the arms are fixed into this position.
+        //Controlling the character with the sensors, I want the lower body and the head on the neck to stay Kinematic.
         playerSpawnPosition = (Transform)GameObject.Find("ZombiePlayer_Spawn_Postion").GetComponent<Transform>();
-        player = PrefabUtility.InstantiatePrefab(Resources.Load("Zombie_Player"), playerSpawnPosition) as GameObject;
+        playerManager = (PlayerManager)GameObject.Find("ZombiePlayer_Spawn_Postion").GetComponent<PlayerManager>();
+        //player = PrefabUtility.InstantiatePrefab(Resources.Load("Zombie_Player"), playerSpawnPosition) as GameObject;
+        player = Instantiate(playerManager.GetPlayerGameObject(), playerSpawnPosition);
+        playerManager.SetPlayerRespawned(true);
+        //Debug.Log(playerManager.GetPlayerRespawned());
+        player_rigidbodies = player.GetComponentsInChildren<Rigidbody>();
+        DisableRagdoll();
+        player.GetComponent<Transform>().position = playerSpawnPosition.position;
+
         wallSpawnPosition = (Transform)GameObject.Find("Wall_Spawn_Position").GetComponent<Transform>();
         wallDestinationPosition = (Transform)GameObject.Find("Wall_Destination_Position").GetComponent<Transform>();
-        Debug.Log(player);
         wall = GetComponent<Transform>();
-        doCrashParticleEffect = true;
-        
+        doCrashParticleEffect = true;       
         //wall.transform.rotation = new Quaternion(0, 0, 0, 0);
 
     }
@@ -45,13 +56,15 @@ public class CollisionDetection : MonoBehaviour
     {
 
         current_WallPatrolScript = wall.GetComponent<Wall_Patrol>();
-        Debug.Log(player);
         originalMoveSpeed = current_WallPatrolScript.GetMoveSpeed();
         //wall.transform.rotation = new Quaternion(0, 0, 0, 0);
         if(wall.transform.position == wallDestinationPosition.position)
         {
             current_WallPatrolScript.SetMoveSpeed(originalMoveSpeed);
-            Destroy(player);      
+            //player.GetComponent<Transform>().position = playerSpawnPosition.position;
+            Destroy(player);
+            //playerManager.SetPlayerRespawned(true);
+            //playerRespawned = true;
         }
 
     }
@@ -62,7 +75,8 @@ public class CollisionDetection : MonoBehaviour
             //print("I hit a player");
             if (doCrashParticleEffect)
             {
-                crashParticles = PrefabUtility.InstantiatePrefab(Resources.Load("Crash_Particles"), playerSpawnPosition) as GameObject;                
+                //crashParticles = PrefabUtility.InstantiatePrefab(Resources.Load("Crash_Particles"), playerSpawnPosition) as GameObject;
+                crashParticles = Instantiate(playerManager.GetCrashParticlesGameObject(), playerSpawnPosition);
                 doCrashParticleEffect = false;
             }
             EnableRagdoll();
@@ -83,7 +97,7 @@ public class CollisionDetection : MonoBehaviour
 
     void EnableRagdoll()
     {
-        player_rigidbodies = player.GetComponentsInChildren<Rigidbody>();
+        //player_rigidbodies = player.GetComponentsInChildren<Rigidbody>();
         foreach (Rigidbody rb in player_rigidbodies)
         {
             rb.useGravity = true;
@@ -98,7 +112,7 @@ public class CollisionDetection : MonoBehaviour
         {
             rb.useGravity = false;
             rb.isKinematic = true;
-            rb.detectCollisions = false;
+            //rb.detectCollisions = false;
         }
     }
 

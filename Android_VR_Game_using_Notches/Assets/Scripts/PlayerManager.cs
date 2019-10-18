@@ -5,40 +5,38 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    /*public Transform playerSpawnPosition;
+    public GameObject player;
+    public GameObject crashParticles;
+    private bool playerRespawned = true;
 
-    public void Awake()
-    {
-        player = PrefabUtility.InstantiatePrefab(Resources.Load("Zombie_Player"), playerSpawnPosition) as GameObject;
-    }
-
-    void Start()
-    {
-        //player = PrefabUtility.InstantiatePrefab(Resources.Load("Zombie_Player"), playerSpawnPosition) as GameObject;
-        //Debug.Log(player);
-    }
-    public PlayerManager()
-    {
-        Instantiate(player, playerSpawnPosition);
-    }
-
-    public void spawnPlayer()
-    {
-        Instantiate(player, playerSpawnPosition);
-    }
-
-    public GameObject GetPlayerObject()
+    public GameObject GetPlayerGameObject()
     {
         return player;
     }
 
-    public void DestroyPlayer(GameObject player)
+    public void SetPlayerGameObject(GameObject newPlayer)
     {
-        Destroy(player);
+        player = newPlayer;
     }
-    public GameObject ReSpawnPlayer()
+
+    public GameObject GetCrashParticlesGameObject()
     {
-        GameObject player = PrefabUtility.InstantiatePrefab(Resources.Load("Zombie_Player"), playerSpawnPosition) as GameObject;
-        return player;
-    }*/
+        return crashParticles;
+    }
+
+    public void SetCrashParticlesGameObject(GameObject newCrashParticles)
+    {
+        crashParticles = newCrashParticles;
+    }
+
+    public void SetPlayerRespawned(bool playerRespawned)
+    {
+        this.playerRespawned = playerRespawned;
+    }
+
+    public bool GetPlayerRespawned()
+    {
+        return playerRespawned;
+    }
+
 }

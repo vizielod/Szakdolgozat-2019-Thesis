@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    public int wallCount;
     public GameObject[] walls;
     public Transform wallSpawnPosition;
     public Transform wallDestinationPosition;
 
-    public int wall_pool_size = 3;
+    private int wall_pool_size;
 
     public float moveSpeed;
     private GameObject wall;
@@ -16,28 +17,51 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        wall = Instantiate(walls[Random.Range(0, 2)], this.GetComponent<Transform>());
+        wall_pool_size = walls.Length;
+        wall = Instantiate(walls[Random.Range(0, wall_pool_size)], this.GetComponent<Transform>());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        if (wall.transform.position == wallDestinationPosition.position && wall_pool_size != 0)
+        if (wall)
         {
-            wall_pool_size--;
-            Destroy(wall);
-            wall = Instantiate(walls[Random.Range(0, 2)], this.GetComponent<Transform>());
+            if (wall.transform.position == wallDestinationPosition.position)
+            {
+                
+                if (wallCount > 1)
+                {
+                    wallCount--;
+                    Destroy(wall);
+                    wall = Instantiate(walls[Random.Range(0, wall_pool_size)], this.GetComponent<Transform>());
+                }
+                else
+                {
+                    Destroy(wall);
+                    //TODO: Ide jöhet egy játék vége felírat, vagy next level vagy valami hasonló
+                }
+            }
         }
-        if (wall.transform.position == wallDestinationPosition.position && wall_pool_size == 0)
+        if (!wall)
         {
-            Destroy(wall);
             //TODO: Ide jöhet egy játék vége felírat, vagy next level vagy valami hasonló
+            #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+            #elif UNITY_ANDROID
+            Application.Quit();
+            #endif
+            
         }
-        /*if (wall.GetComponent<Rigidbody>().velocity.Equals(Vector3.zero))
-        {
-            //Destroy(wall);
-        }*/
 
+    }
+
+    public void SetMoveSpeed(float newSpeed)
+    {
+        moveSpeed = newSpeed;
+    }
+
+    public float GetMoveSpeed()
+    {
+        return moveSpeed;
     }
 }

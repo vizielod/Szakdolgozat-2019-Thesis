@@ -35,7 +35,7 @@ public class PlayerRotation : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Debug.Log(rb);
+        //Debug.Log(rb);
         //inputRotation = new Vector3(0, Input.GetAxisRaw("Vertical"), 0);
     }
 

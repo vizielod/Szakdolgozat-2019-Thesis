@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class Wall_Patrol : MonoBehaviour
 {
-    private float moveSpeed = 5f;
+    private float moveSpeed;
     private Transform destination;
     //private Vector3 wallDestinationPosition = new Vector3(0, 0.5f, -12.16f); //It might be saved as resource and called it like that
     private Transform wallDestinationPosition;
+    private Spawner parentSpawnerComponent;
     // Start is called before the first frame update
     void Start()
     {
         wallDestinationPosition = (Transform)GameObject.Find("Wall_Destination_Position").GetComponent<Transform>();
+        parentSpawnerComponent = GetComponentInParent<Spawner>();
+        moveSpeed = parentSpawnerComponent.GetMoveSpeed();
         //moveSpeed = Spawner.GetMoveSpeed();
     }
 

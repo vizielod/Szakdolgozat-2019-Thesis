@@ -23,6 +23,7 @@ public class Old_CollisionDetection : MonoBehaviour
     private float originalMoveSpeed;
 
     private GameObject player;
+    private PlayerManager playerManager;
 
     void Awake()
     {
@@ -35,10 +36,13 @@ public class Old_CollisionDetection : MonoBehaviour
 
     void Start()
     {
-
+        playerSpawnPosition = (Transform)GameObject.Find("ZombiePlayer_Spawn_Postion").GetComponent<Transform>();
+        playerManager = (PlayerManager)GameObject.Find("ZombiePlayer_Spawn_Postion").GetComponent<PlayerManager>();
         //player = PrefabUtility.InstantiatePrefab(Resources.Load("Zombie_Player"), playerSpawnPosition) as GameObject;
         //rb = (Rigidbody)GameObject.Find("ZombieRig (2)/rig/hips/spine/chest").GetComponent<Rigidbody>();
-        player = GameObject.Find("ZombieRig (3)");
+        player = Instantiate(playerManager.GetPlayerGameObject(), playerSpawnPosition);
+
+        //player = GameObject.Find("ZombieRig (3)");
         Debug.Log(player);
         wall = GetComponent<Transform>();
         wallGO = wall.gameObject;
@@ -75,7 +79,8 @@ public class Old_CollisionDetection : MonoBehaviour
             //wall_patrolScript.SetMoveSpeed(originalMoveSpeed);
             current_WallPatrolScript.SetMoveSpeed(originalMoveSpeed);
             Destroy(player);
-            player = PrefabUtility.InstantiatePrefab(Resources.Load("Zombie_Player"), playerSpawnPosition) as GameObject;
+            //player = PrefabUtility.InstantiatePrefab(Resources.Load("Zombie_Player"), playerSpawnPosition) as GameObject;
+            player = Instantiate(playerManager.GetPlayerGameObject(), playerSpawnPosition);
         }
 
     }

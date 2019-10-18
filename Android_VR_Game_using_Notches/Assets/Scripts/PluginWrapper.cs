@@ -22,6 +22,8 @@ public class PluginWrapper : MonoBehaviour
     private float angleZ_f;
     private Vector3 inputRotation;
 
+    private PlayerManager playerManager;
+    private GameObject player;
 
     public static PluginWrapper GetInstance()
     {
@@ -39,8 +41,15 @@ public class PluginWrapper : MonoBehaviour
         AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
         curActivity = jc.GetStatic<AndroidJavaObject>("currentActivity");
 #endif
-
-        rb = (Rigidbody) GameObject.Find("ZombieRig (2)/rig/hips/spine/chest").GetComponent<Rigidbody>();
+        playerManager = (PlayerManager)GameObject.Find("ZombiePlayer_Spawn_Postion").GetComponent<PlayerManager>();
+        Debug.Log(playerManager.GetPlayerRespawned());
+        /*player = playerManager.GetPlayerGameObject();
+        Transform trans = player.GetComponent<Transform>();
+        rb = (Rigidbody)trans.Find("chest").GetComponent<Rigidbody>();
+        Debug.Log(rb);*/
+        //Rigidbody rigidbody = go.Find("chest").GetComponent<Rigidbody>();
+        //rb = (Rigidbody) GameObject.Find("ZombieRig (2)/rig/hips/spine/chest").GetComponent<Rigidbody>();
+        //rb = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest").GetComponent<Rigidbody>();
 
         myText = (Text)GameObject.Find("Canvas/Text").GetComponent<Text>();
         chestX = (Text)GameObject.Find("Canvas/ChestX").GetComponent<Text>();
@@ -56,6 +65,7 @@ public class PluginWrapper : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //rb = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest").GetComponent<Rigidbody>();
         //SetText("START");
         //InvokeRepeating("repeatCall", 0.1f, 0.1f);
         PluginWrapper.GetInstance().CallJavaFunc("javaTestFunc", "UnityJavaJarTest");
@@ -65,7 +75,9 @@ public class PluginWrapper : MonoBehaviour
         //rotationSpeed = 50f; 
         Debug.Log(rotationSpeed);
         //rb = GetComponent<Rigidbody>();
-        
+        /*if (GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)"))
+            rb = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest").GetComponent<Rigidbody>();
+        Debug.Log(rb);*/
     }
 
     public void CallJavaFunc(string strFuncName, string strTemp)
@@ -100,6 +112,12 @@ public class PluginWrapper : MonoBehaviour
         PluginWrapper.GetInstance().CallJavaFunc("javaGetCoordFunc", "UnityJavaJarTest");
         if (Input.GetKeyDown(KeyCode.Escape))
             Application.Quit();
+        if(GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)") && playerManager.GetPlayerRespawned())
+        {
+            Debug.Log("PluginWrapper Update rb meghivva");
+            rb = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest").GetComponent<Rigidbody>();
+            playerManager.SetPlayerRespawned(false);
+        }
     }
 
     private void FixedUpdate()
@@ -107,7 +125,9 @@ public class PluginWrapper : MonoBehaviour
         inputRotation = new Vector3(angleX_f, angleY_f, -angleZ_f);
         /*Quaternion deltaRotation = Quaternion.Euler(inputRotation * Time.deltaTime * rotationSpeed);
         rb.MoveRotation(rb.rotation * deltaRotation);*/
-        rb.transform.Rotate(inputRotation * Time.deltaTime/* * rotationSpeed*/);
+        if(rb)
+            rb.transform.Rotate(inputRotation * Time.deltaTime/* * rotationSpeed*/);
+        //Debug.Log(rb);
     }
 
     void DefaultText()
