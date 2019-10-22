@@ -574,15 +574,39 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
     private float ChestAnteriorTiltAngle;
     private float ChestLateralTiltAngle;
 
+    private float leftUpperArmRotationAngle;
+    private float leftUpperArmAnteriorTiltAngle;
+    private float leftUpperArmLateralTiltAngle;
+
+    private float leftForeArmRotationAngle;
+    private float leftForeArmAnteriorTiltAngle;
+    private float leftForeArmLateralTiltAngle;
+
+    private float rightUpperArmRotationAngle;
+    private float rightUpperArmAnteriorTiltAngle;
+    private float rightUpperArmLateralTiltAngle;
+
+    private float rightForeArmRotationAngle;
+    private float rightForeArmAnteriorTiltAngle;
+    private float rightForeArmLateralTiltAngle;
+
     // Calculate angles
     private void calculateAngles(int frameIndex) {
         Bone chest = mSkeleton.getBone("ChestTop");
         Bone root = mSkeleton.getRoot();
         Bone foreArm = mSkeleton.getBone("RightForeArm");
         Bone upperArm = mSkeleton.getBone("RightUpperArm");
+        Bone left_upperArm = mSkeleton.getBone("LeftUpperArm");
+        Bone right_upperArm = mSkeleton.getBone("RightUpperArm");
+        Bone left_foreArm = mSkeleton.getBone("LeftForeArm");
+        Bone right_foreArm = mSkeleton.getBone("RightForeArm");
 
         fvec3 chestAngles = new fvec3();
         fvec3 elbowAngles = new fvec3();
+        fvec3 left_upperArmAngles = new fvec3();
+        fvec3 left_foreArmAngles = new fvec3();
+        fvec3 right_upperArmAngles = new fvec3();
+        fvec3 right_foreArmAngles = new fvec3();
 
         // Calculate forearm angles with respect to upper arm (determine elbow joint angles).
         // Angles correspond to rotations around X,Y and Z axis of the paren bone's coordinate system, respectively.
@@ -590,6 +614,15 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
         // Default orientations are defined in the steady pose (in the skeleton file)
         // Usage: calculateRelativeAngle(Bone child, Bone parent, int frameIndex, fvec3 output)
         mData.calculateRelativeAngle(foreArm, upperArm, frameIndex, elbowAngles);
+        // Calculating Left Upper Arm Angles
+        mData.calculateRelativeAngle(left_upperArm, chest, frameIndex, left_upperArmAngles);
+        // Calculating Left Forearm Angles
+        mData.calculateRelativeAngle(left_foreArm, left_upperArm, frameIndex, left_foreArmAngles);
+        // Calculating Right Upper Arm Angles
+        mData.calculateRelativeAngle(right_upperArm, chest, frameIndex, right_upperArmAngles);
+        // Calculating Right Forearm Angles
+        mData.calculateRelativeAngle(right_foreArm, right_upperArm, frameIndex, right_foreArmAngles);
+
 
         // Calculate chest angles with respect root, i.e. absolute angles
         // The root orientation is the always the same as in the steady pose.
@@ -600,6 +633,31 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
         ChestRotationAngle = chestAngles.get(1);
         ChestLateralTiltAngle = chestAngles.get(2);
 
+        /**Left Upper Arm**/
+        leftUpperArmRotationAngle = left_upperArmAngles.get(0);
+        leftUpperArmAnteriorTiltAngle = left_upperArmAngles.get(1);
+        leftUpperArmLateralTiltAngle = left_upperArmAngles.get(2);
+        /*Log.i(LOGTAG, left_upperArmAngles.toString());
+        Log.i(LOGTAG, String.valueOf(leftUpperArmRotationAngle));
+        Log.i(LOGTAG, String.valueOf(leftUpperArmAnteriorTiltAngle));
+        Log.i(LOGTAG, String.valueOf(leftUpperArmLateralTiltAngle));*/
+        /**Left Forearm**/
+        leftForeArmRotationAngle = left_upperArmAngles.get(0);
+        leftForeArmAnteriorTiltAngle = left_upperArmAngles.get(1);
+        leftForeArmLateralTiltAngle = left_upperArmAngles.get(2);
+
+        /**Right Upper Arm**/
+        rightUpperArmRotationAngle = right_upperArmAngles.get(0);
+        rightUpperArmAnteriorTiltAngle = right_upperArmAngles.get(1);
+        rightUpperArmLateralTiltAngle = right_upperArmAngles.get(2);
+        /*Log.i(LOGTAG, right_upperArmAngles.toString());
+        Log.i(LOGTAG, String.valueOf(rightUpperArmRotationAngle));
+        Log.i(LOGTAG, String.valueOf(rightUpperArmAnteriorTiltAngle));
+        Log.i(LOGTAG, String.valueOf(rightUpperArmLateralTiltAngle));*/
+        /**Right Forearm**/
+        rightForeArmRotationAngle = right_upperArmAngles.get(0);
+        rightForeArmAnteriorTiltAngle = right_upperArmAngles.get(1);
+        rightForeArmLateralTiltAngle = right_upperArmAngles.get(2);
 
         // Show angles
         StringBuilder sb = new StringBuilder();
@@ -912,38 +970,38 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
 
     void startUnityPlayerActivity() {
         mUnityPlayerActivity = null;
-            //inProgress();
-            c = mNotchService.capture(new NotchCallback<Void>() {
-                @Override
-                public void onProgress(NotchProgress progress) {
-                    if (progress.getState() == NotchProgress.State.REALTIME_UPDATE) {
-                        mData = (VisualiserData) progress.getObject();
+        //inProgress();
+        c = mNotchService.capture(new NotchCallback<Void>() {
+            @Override
+            public void onProgress(NotchProgress progress) {
+                if (progress.getState() == NotchProgress.State.REALTIME_UPDATE) {
+                    mData = (VisualiserData) progress.getObject();
 
-                        //Log.i(LOGTAG, mData.toString());
-                        refreshAngles();
-                        //calculateAngles(mFrameIndex);
-                        //Log.i(LOGTAG, RelativeNotchPosition);
-                        updateRealTime();
-                    }
+                    //Log.i(LOGTAG, mData.toString());
+                    refreshAngles();
+                    //calculateAngles(mFrameIndex);
+                    //Log.i(LOGTAG, RelativeNotchPosition);
+                    updateRealTime();
                 }
+            }
 
-                @Override
-                public void onSuccess(Void nothing) {
-                    //clearText();
-                }
+            @Override
+            public void onSuccess(Void nothing) {
+                //clearText();
+            }
 
-                @Override
-                public void onFailure(NotchError notchError) {
-                    Util.showNotification(Util.getNotchErrorStr(notchError));
-                    //clearText();
-                }
+            @Override
+            public void onFailure(NotchError notchError) {
+                Util.showNotification(Util.getNotchErrorStr(notchError));
+                //clearText();
+            }
 
-                @Override
-                public void onCancelled() {
-                    Util.showNotification("Real-time measurement stopped!");
-                    //clearText();
-                }
-            });
+            @Override
+            public void onCancelled() {
+                Util.showNotification("Real-time measurement stopped!");
+                //clearText();
+            }
+        });
     }
 
     @OnClick(R.id.button_top_view)
@@ -956,20 +1014,54 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
     private void updateRealTime() {
         if (mUnityPlayerActivity == null) {
             unityIntent = new Intent(this, UnityPlayerActivity.class);
+            /** Chest Angles **/
             unityIntent.putExtra("message", RelativeNotchPosition);
             unityIntent.putExtra("ChestAnteriorTilt", ChestAnteriorTiltAngle);
             unityIntent.putExtra("ChestRotation", ChestRotationAngle);
             unityIntent.putExtra("ChestLateralTilt", ChestLateralTiltAngle);
+            /** Left Upper Arm Angles **/
+            unityIntent.putExtra("LeftUpperArmAnteriorTilt", leftUpperArmAnteriorTiltAngle);
+            unityIntent.putExtra("LeftUpperArmRotation", leftUpperArmRotationAngle);
+            unityIntent.putExtra("LeftUpperArmLateralTilt", leftUpperArmLateralTiltAngle);
+            /** Left Forearm Angles **/
+            unityIntent.putExtra("LeftForeArmAnteriorTilt", leftForeArmAnteriorTiltAngle);
+            unityIntent.putExtra("LeftForeArmRotation", leftForeArmRotationAngle);
+            unityIntent.putExtra("LeftForeArmLateralTilt", leftForeArmLateralTiltAngle);
+            /** Right Upper Arm Angles **/
+            unityIntent.putExtra("RightUpperArmAnteriorTilt", rightUpperArmAnteriorTiltAngle);
+            unityIntent.putExtra("RightUpperArmRotation", rightUpperArmRotationAngle);
+            unityIntent.putExtra("RightUpperArmLateralTilt", rightUpperArmLateralTiltAngle);
+            /** Right Forearm Angles **/
+            unityIntent.putExtra("RightForeArmAnteriorTilt", rightForeArmAnteriorTiltAngle);
+            unityIntent.putExtra("RightForeArmRotation", rightForeArmRotationAngle);
+            unityIntent.putExtra("RightForeArmLateralTilt", rightForeArmLateralTiltAngle);
             //unityIntent.putExtra("message", mData.toString());
             startActivity(unityIntent);
         }
         else {
             //unityIntent.putExtra("message", mData.toString());
+            /** Chest Angles **/
             unityIntent.putExtra("message", RelativeNotchPosition);
             unityIntent.putExtra("ChestAnteriorTilt", ChestAnteriorTiltAngle);
             unityIntent.putExtra("ChestRotation", ChestRotationAngle);
             unityIntent.putExtra("ChestLateralTilt", ChestLateralTiltAngle);
-           // EventBus.getDefault().post(mData);
+            /** Left Upper Arm Angles **/
+            unityIntent.putExtra("LeftUpperArmAnteriorTilt", leftUpperArmAnteriorTiltAngle);
+            unityIntent.putExtra("LeftUpperArmRotation", leftUpperArmRotationAngle);
+            unityIntent.putExtra("LeftUpperArmLateralTilt", leftUpperArmLateralTiltAngle);
+            /** Left Forearm Angles **/
+            unityIntent.putExtra("LeftForeArmAnteriorTilt", leftForeArmAnteriorTiltAngle);
+            unityIntent.putExtra("LeftForeArmRotation", leftForeArmRotationAngle);
+            unityIntent.putExtra("LeftForeArmLateralTilt", leftForeArmLateralTiltAngle);
+            /** Right Upper Arm Angles **/
+            unityIntent.putExtra("RightUpperArmAnteriorTilt", rightUpperArmAnteriorTiltAngle);
+            unityIntent.putExtra("RightUpperArmRotation", rightUpperArmRotationAngle);
+            unityIntent.putExtra("RightUpperArmLateralTilt", rightUpperArmLateralTiltAngle);
+            /** Right Forearm Angles **/
+            unityIntent.putExtra("RightForeArmAnteriorTilt", rightForeArmAnteriorTiltAngle);
+            unityIntent.putExtra("RightForeArmRotation", rightForeArmRotationAngle);
+            unityIntent.putExtra("RightForeArmLateralTilt", rightForeArmLateralTiltAngle);
+            // EventBus.getDefault().post(mData);
         }
     }
 

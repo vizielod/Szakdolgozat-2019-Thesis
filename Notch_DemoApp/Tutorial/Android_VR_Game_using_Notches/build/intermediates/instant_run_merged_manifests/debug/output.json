@@ -1,0 +1,1 @@
+[{"outputType":{"type":"INSTANT_RUN_MERGED_MANIFESTS"},"apkData":{"type":"MAIN","splits":[],"versionCode":1,"versionName":"0.1","enabled":true,"outputFile":"Android_VR_Game_using_Notches-debug.apk","fullName":"debug","baseName":"debug"},"path":"AndroidManifest.xml","properties":{"packageId":"com.unity3d.AndroidGameUsingNotches","split":"","minSdkVersion":"16"}}]

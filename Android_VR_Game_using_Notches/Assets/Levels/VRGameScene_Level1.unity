@@ -4045,6 +4045,10 @@ MonoBehaviour:
   walls:
   - {fileID: 1796796822127547178, guid: b87be0179ab244b4ca9d555ad47a4a21, type: 3}
   - {fileID: 7423662677317904488, guid: f768f96f74773a2409924f3f509a86c6, type: 3}
+  - {fileID: 4638384588662453467, guid: 9ab4e8be623d7784d87ecfc934cd0307, type: 3}
+  - {fileID: 3341499028374402856, guid: d1b9e93f92d58cf49a207b33af5a8003, type: 3}
+  - {fileID: 5251163995480787188, guid: 727b330180c90f44894cc787b87000b2, type: 3}
+  - {fileID: 8110817120467054101, guid: d97bd27ab0211184c8821c19ebe24b57, type: 3}
   wallSpawnPosition: {fileID: 46437705}
   wallDestinationPosition: {fileID: 989761970}
   moveSpeed: 5

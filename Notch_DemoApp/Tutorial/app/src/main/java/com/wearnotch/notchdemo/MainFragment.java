@@ -232,6 +232,7 @@ public class MainFragment extends BaseFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Log.i(LOGTAG, "MainFragment onCreate");
         super.onCreate(savedInstanceState);
         mApplicationContext = getActivity().getApplicationContext();
         mActivity = getBaseActivity();
@@ -327,6 +328,7 @@ public class MainFragment extends BaseFragment {
 
     @Override
     public void onResume() {
+        Log.i(LOGTAG, "MainFragment onResume");
         super.onResume();
         setActionBarTitle(R.string.app_name);
         if (mNotchService != null && mUser == null) {
@@ -484,7 +486,9 @@ public class MainFragment extends BaseFragment {
         Skeleton skeleton;
         try {
             skeleton = Skeleton.from(new InputStreamReader(mApplicationContext.getResources().openRawResource(R.raw.skeleton_male), "UTF-8"));
-            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(mApplicationContext.getResources().openRawResource(R.raw.config_3_right_arm))));
+            //Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(mApplicationContext.getResources().openRawResource(R.raw.config_3_right_arm))));
+            //Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(mApplicationContext.getResources().openRawResource(R.raw.config_3_notches))));
+            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(mApplicationContext.getResources().openRawResource(R.raw.config_5_notches))));
             if (mRealTime) {
                 workout = workout.withRealTime(true);
                 workout = workout.withMeasurementType(MeasurementType.STEADY_SKIP);
@@ -580,7 +584,7 @@ public class MainFragment extends BaseFragment {
                     if (progress.getState() == NotchProgress.State.REALTIME_UPDATE) {
                         mRealTimeData = (VisualiserData) progress.getObject();
                         //Log.i(LOGTAG, "mRealTimeData");
-                        Log.i(LOGTAG, mRealTimeData.toString());
+                        //Log.i(LOGTAG, mRealTimeData.toString());
                         updateRealTime();
                     }
                 }
@@ -950,6 +954,7 @@ public class MainFragment extends BaseFragment {
 
     private void updateRealTime() {
         if (mVisualiserActivity == null) {
+            //Log.i(LOGTAG, "VisualiserActivity is NULL");
             mVisualiserActivity = new VisualiserActivity();
             Intent i = VisualiserActivity.createIntent(getActivity(), mRealTimeData, mRealTime);
             startActivity(i);
@@ -961,6 +966,7 @@ public class MainFragment extends BaseFragment {
             startActivity(intent);
         }*/
         else {
+            //Log.i(LOGTAG, "VisualiserActivity is NOT NULL");
             EventBus.getDefault().post(mRealTimeData);
         }
         //mVisualiserActivity = new VisualiserActivity();
