@@ -1,7 +1,6 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - CharacterMovement
     - CollisionDetection
     - Patrol
     - PlayerManager
@@ -48,13 +47,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 90
-      Script: {instanceID: 0}
-    - Class: 91
       Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
@@ -66,8 +61,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 9670}
-    - Class: 114
-      Script: {instanceID: 9776}
     - Class: 114
       Script: {instanceID: 9820}
     - Class: 114
@@ -239,7 +232,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 3f7d3eac3468685ef18425a40cd5b891
+      Hash: 5807b4e46ef83866c614b9860847dd44
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerRotation
@@ -479,7 +472,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 1cd70a49dea47f3a4b04e1b86af24cf8
+      Hash: 2d3014432f52ef23e937bf18165df593
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PluginWrapper
@@ -603,6 +596,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: ea741232e1fcf5a24d0bfaef3bca6a2d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DemoRotation
   platform: 13
   scenePathNames:
   - Assets/Levels/VRGameScene_Level1.unity

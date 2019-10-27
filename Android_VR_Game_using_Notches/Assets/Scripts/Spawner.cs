@@ -18,7 +18,10 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         wall_pool_size = walls.Length;
-        wall = Instantiate(walls[Random.Range(0, wall_pool_size)], this.GetComponent<Transform>());
+        if(wallCount > 0)
+        {
+            wall = Instantiate(walls[Random.Range(0, wall_pool_size)], this.GetComponent<Transform>());
+        }
     }
 
     // Update is called once per frame
@@ -42,7 +45,7 @@ public class Spawner : MonoBehaviour
                 }
             }
         }
-        if (!wall)
+        /*if (!wall)
         {
             //TODO: Ide jöhet egy játék vége felírat, vagy next level vagy valami hasonló
             #if UNITY_EDITOR
@@ -51,7 +54,7 @@ public class Spawner : MonoBehaviour
             Application.Quit();
             #endif
             
-        }
+        }*/
 
     }
 

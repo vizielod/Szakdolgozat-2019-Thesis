@@ -187,5 +187,6 @@
     <orderEntry type="library" name="Gradle: com.android.support:multidex:1.0.3@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-media-compat:28.0.0@aar" level="project" />
     <orderEntry type="module" module-name="Android_VR_Game_using_Notches" />
+    <orderEntry type="module" module-name="Android_VR_Game_using_Notches" />
   </component>
 </module>

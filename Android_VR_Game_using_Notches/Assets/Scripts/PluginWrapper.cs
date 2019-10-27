@@ -42,7 +42,9 @@ public class PluginWrapper : MonoBehaviour
     private float rightForeArmAngleY_f;
     private float rightForeArmAngleZ_f;
 
-    private Vector3 inputRotation;
+    public Vector3 currentRotation;
+    public Vector3 inputChestRotation;
+    public Vector3 inputLeftUpperArmRotation;
     private Vector3 leftUpperArm_inputRotation;
     private Vector3 leftForeArm_inputRotation;
     private Vector3 rightUpperArm_inputRotation;
@@ -69,13 +71,6 @@ public class PluginWrapper : MonoBehaviour
 #endif
         playerManager = (PlayerManager)GameObject.Find("ZombiePlayer_Spawn_Postion").GetComponent<PlayerManager>();
         Debug.Log(playerManager.GetPlayerRespawned());
-        /*player = playerManager.GetPlayerGameObject();
-        Transform trans = player.GetComponent<Transform>();
-        rb = (Rigidbody)trans.Find("chest").GetComponent<Rigidbody>();
-        Debug.Log(rb);*/
-        //Rigidbody rigidbody = go.Find("chest").GetComponent<Rigidbody>();
-        //rb = (Rigidbody) GameObject.Find("ZombieRig (2)/rig/hips/spine/chest").GetComponent<Rigidbody>();
-        //rb = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest").GetComponent<Rigidbody>();
 
         myText = (Text)GameObject.Find("Canvas/Text").GetComponent<Text>();
         chestX = (Text)GameObject.Find("Canvas/ChestX").GetComponent<Text>();
@@ -95,15 +90,8 @@ public class PluginWrapper : MonoBehaviour
         //SetText("START");
         //InvokeRepeating("repeatCall", 0.1f, 0.1f);
         PluginWrapper.GetInstance().CallJavaFunc("javaTestFunc", "UnityJavaJarTest");
-        PluginWrapper.GetInstance().CallJavaFunc("javaGetCoordFunc", "UnityJavaJarTest");
-        Debug.Log("GO");
-        Debug.Log(rb);
-        //rotationSpeed = 50f; 
-        Debug.Log(rotationSpeed);
-        //rb = GetComponent<Rigidbody>();
-        /*if (GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)"))
-            rb = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest").GetComponent<Rigidbody>();
-        Debug.Log(rb);*/
+        PluginWrapper.GetInstance().CallJavaFunc("javaGetCoordFunc", "UnityJavaJarTest");       
+
     }
 
     public void CallJavaFunc(string strFuncName, string strTemp)
@@ -137,38 +125,86 @@ public class PluginWrapper : MonoBehaviour
         PluginWrapper.GetInstance().CallJavaFunc("javaTestFunc", "UnityJavaJarTest");
         PluginWrapper.GetInstance().CallJavaFunc("javaGetCoordFunc", "UnityJavaJarTest");
         if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            #if UNITY_ANDROID
             Application.Quit();
+            #endif
+        }
         if (GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)") && playerManager.GetPlayerRespawned())
         {
             Debug.Log("PluginWrapper Update rb meghivva");
             rb = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest").GetComponent<Rigidbody>();
             rb_leftUpperArm = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest/shoulder.L/upper_arm.L").GetComponent<Rigidbody>();
-            rb_leftForeArm = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest/shoulder.L/forearm.L").GetComponent<Rigidbody>();
+
+            rb_leftForeArm = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L").GetComponent<Rigidbody>();
+
             rb_rightUpperArm = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest/shoulder.R/upper_arm.R").GetComponent<Rigidbody>();
-            rb_rightForeArm = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest/shoulder.R/forearm.R").GetComponent<Rigidbody>();
+
+            rb_rightForeArm = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R").GetComponent<Rigidbody>();
+
             playerManager.SetPlayerRespawned(false);
         }
     }
-
     private void FixedUpdate()
     {
-        inputRotation = new Vector3(angleX_f, angleY_f, -angleZ_f);
-        leftUpperArm_inputRotation = new Vector3(leftUpperArmAngleX_f, leftUpperArmAngleY_f, -leftUpperArmAngleZ_f);
-        leftForeArm_inputRotation = new Vector3(leftForeArmAngleX_f, leftForeArmAngleY_f, -leftForeArmAngleZ_f);
-        rightUpperArm_inputRotation = new Vector3(rightUpperArmAngleX_f, rightUpperArmAngleY_f, -rightUpperArmAngleZ_f);
-        rightForeArm_inputRotation = new Vector3(rightForeArmAngleX_f, rightForeArmAngleY_f, -rightForeArmAngleZ_f);
-        /*Quaternion deltaRotation = Quaternion.Euler(inputRotation * Time.deltaTime * rotationSpeed);
-        rb.MoveRotation(rb.rotation * deltaRotation);*/
+
+        /*inputRotation = new Vector3(angleX_f, angleY_f, -angleZ_f);
+        leftUpperArm_inputRotation = new Vector3(leftUpperArmAngleX_f, -leftUpperArmAngleY_f, -leftUpperArmAngleZ_f);
+        leftForeArm_inputRotation = new Vector3(leftForeArmAngleX_f, -leftForeArmAngleY_f, -leftForeArmAngleZ_f);
+        rightUpperArm_inputRotation = new Vector3(rightUpperArmAngleX_f, rightUpperArmAngleY_f, rightUpperArmAngleZ_f);
+        rightForeArm_inputRotation = new Vector3(rightForeArmAngleX_f, rightForeArmAngleY_f, rightForeArmAngleZ_f);*/
+
+        /** CHEST **/
         if (rb)
-            rb.transform.Rotate(inputRotation * Time.deltaTime/* * rotationSpeed*/);
+        {
+            inputChestRotation = new Vector3(angleX_f % 360, -angleY_f % 360, -angleZ_f % 360);
+            //inputChestRotation = new Vector3(inputChestRotation.x % 360, inputChestRotation.y % 360, inputChestRotation.z % 360);
+            Quaternion rotationY = Quaternion.AngleAxis(inputChestRotation.y, new Vector3(0f, 1f, 0f));
+            Quaternion rotationX = Quaternion.AngleAxis(inputChestRotation.x, new Vector3(1f, 0f, 0f));
+            Quaternion rotationZ = Quaternion.AngleAxis(inputChestRotation.z, new Vector3(0f, 0f, 1f));
+            rb.transform.localRotation = rotationX * rotationY * rotationZ;
+        }
+
+        /** LEFT UPPER ARM **/
         if (rb_leftUpperArm)
-            rb_leftUpperArm.transform.Rotate(leftUpperArm_inputRotation * Time.deltaTime/* * rotationSpeed*/);
+        {
+            leftUpperArm_inputRotation = new Vector3(leftUpperArmAngleX_f % 360, -leftUpperArmAngleY_f % 360, -leftUpperArmAngleZ_f % 360);
+            //leftUpperArm_inputRotation = new Vector3(inputLeftUpperArmRotation.x % 360, inputLeftUpperArmRotation.y % 360, inputLeftUpperArmRotation.z % 360);
+            Quaternion rotationY = Quaternion.AngleAxis(leftUpperArm_inputRotation.y, new Vector3(0f, 1f, 0f));
+            Quaternion rotationX = Quaternion.AngleAxis(leftUpperArm_inputRotation.x, new Vector3(1f, 0f, 0f));
+            Quaternion rotationZ = Quaternion.AngleAxis(leftUpperArm_inputRotation.z, new Vector3(0f, 0f, 1f));     
+            rb_leftUpperArm.transform.localRotation = rotationX * rotationY * rotationZ;
+        }
+
+        /** LEFT FOREARM **/
         if (rb_leftForeArm)
-            rb_leftForeArm.transform.Rotate(leftForeArm_inputRotation * Time.deltaTime/* * rotationSpeed*/);
+        {
+            leftForeArm_inputRotation = new Vector3(leftForeArmAngleX_f % 360, -leftForeArmAngleY_f % 360, -leftForeArmAngleZ_f % 360);
+            Quaternion rotationY = Quaternion.AngleAxis(leftForeArm_inputRotation.y, new Vector3(0f, 1f, 0f));
+            Quaternion rotationX = Quaternion.AngleAxis(leftForeArm_inputRotation.x, new Vector3(1f, 0f, 0f));
+            Quaternion rotationZ = Quaternion.AngleAxis(leftForeArm_inputRotation.z, new Vector3(0f, 0f, 1f));
+            rb_leftForeArm.transform.localRotation = rotationX * rotationY * rotationZ;
+        }
+
+        /** RIGHT UPPER ARM **/
         if (rb_rightUpperArm)
-            rb_rightUpperArm.transform.Rotate(rightUpperArm_inputRotation * Time.deltaTime/* * rotationSpeed*/);
+        {
+            rightUpperArm_inputRotation = new Vector3(rightUpperArmAngleX_f % 360, rightUpperArmAngleY_f % 360, rightUpperArmAngleZ_f % 360);
+            Quaternion rotationY = Quaternion.AngleAxis(rightUpperArm_inputRotation.y, new Vector3(0f, 1f, 0f));
+            Quaternion rotationX = Quaternion.AngleAxis(rightUpperArm_inputRotation.x, new Vector3(1f, 0f, 0f));
+            Quaternion rotationZ = Quaternion.AngleAxis(rightUpperArm_inputRotation.z, new Vector3(0f, 0f, 1f));
+            rb_rightUpperArm.transform.localRotation = rotationX * rotationY * rotationZ;
+        }
+
+        /** RIGHT FOREARM **/
         if (rb_rightForeArm)
-            rb_rightForeArm.transform.Rotate(rightForeArm_inputRotation * Time.deltaTime/* * rotationSpeed*/);
+        {
+            rightForeArm_inputRotation = new Vector3(rightForeArmAngleX_f % 360, rightForeArmAngleY_f % 360, rightForeArmAngleZ_f % 360);
+            Quaternion rotationY = Quaternion.AngleAxis(rightForeArm_inputRotation.y, new Vector3(0f, 1f, 0f));
+            Quaternion rotationX = Quaternion.AngleAxis(rightForeArm_inputRotation.x, new Vector3(1f, 0f, 0f));
+            Quaternion rotationZ = Quaternion.AngleAxis(rightForeArm_inputRotation.z, new Vector3(0f, 0f, 1f));
+            rb_rightForeArm.transform.localRotation = rotationX * rotationY * rotationZ;
+        }
         //Debug.Log(rb);
     }
 

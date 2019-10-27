@@ -642,9 +642,9 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
         Log.i(LOGTAG, String.valueOf(leftUpperArmAnteriorTiltAngle));
         Log.i(LOGTAG, String.valueOf(leftUpperArmLateralTiltAngle));*/
         /**Left Forearm**/
-        leftForeArmRotationAngle = left_upperArmAngles.get(0);
-        leftForeArmAnteriorTiltAngle = left_upperArmAngles.get(1);
-        leftForeArmLateralTiltAngle = left_upperArmAngles.get(2);
+        leftForeArmRotationAngle = left_foreArmAngles.get(0);
+        leftForeArmAnteriorTiltAngle = left_foreArmAngles.get(1);
+        leftForeArmLateralTiltAngle = left_foreArmAngles.get(2);
 
         /**Right Upper Arm**/
         rightUpperArmRotationAngle = right_upperArmAngles.get(0);
@@ -655,9 +655,9 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
         Log.i(LOGTAG, String.valueOf(rightUpperArmAnteriorTiltAngle));
         Log.i(LOGTAG, String.valueOf(rightUpperArmLateralTiltAngle));*/
         /**Right Forearm**/
-        rightForeArmRotationAngle = right_upperArmAngles.get(0);
-        rightForeArmAnteriorTiltAngle = right_upperArmAngles.get(1);
-        rightForeArmLateralTiltAngle = right_upperArmAngles.get(2);
+        rightForeArmRotationAngle = right_foreArmAngles.get(0);
+        rightForeArmAnteriorTiltAngle = right_foreArmAngles.get(1);
+        rightForeArmLateralTiltAngle = right_foreArmAngles.get(2);
 
         // Show angles
         StringBuilder sb = new StringBuilder();
