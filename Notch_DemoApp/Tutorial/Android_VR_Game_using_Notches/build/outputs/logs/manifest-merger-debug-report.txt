@@ -117,24 +117,6 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from E:\Egyetem\V. ev\Szakdolgozat\Project\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:21:3-77
 	android:name
 		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Project\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:21:20-75
-uses-feature#android.hardware.touchscreen
-ADDED from E:\Egyetem\V. ev\Szakdolgozat\Project\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:22:3-88
-	android:required
-		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Project\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:22:61-85
-	android:name
-		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Project\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:22:17-60
-uses-feature#android.hardware.touchscreen.multitouch
-ADDED from E:\Egyetem\V. ev\Szakdolgozat\Project\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:23:3-99
-	android:required
-		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Project\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:23:72-96
-	android:name
-		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Project\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:23:17-71
-uses-feature#android.hardware.touchscreen.multitouch.distinct
-ADDED from E:\Egyetem\V. ev\Szakdolgozat\Project\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:24:3-108
-	android:required
-		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Project\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:24:81-105
-	android:name
-		ADDED from E:\Egyetem\V. ev\Szakdolgozat\Project\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml:24:17-80
 uses-sdk
 INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Project\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\Egyetem\V. ev\Szakdolgozat\Project\Notch_DemoApp\Tutorial\Android_VR_Game_using_Notches\src\main\AndroidManifest.xml

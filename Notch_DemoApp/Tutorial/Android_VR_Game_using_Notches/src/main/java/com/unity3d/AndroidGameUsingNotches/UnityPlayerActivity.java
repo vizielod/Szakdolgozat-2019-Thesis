@@ -45,7 +45,7 @@ public class UnityPlayerActivity extends Activity
 
 
         mUnityPlayer = new UnityPlayer(this);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        //getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(mUnityPlayer);
         mUnityPlayer.requestFocus();
     }
@@ -144,11 +144,16 @@ public class UnityPlayerActivity extends Activity
         super.onDestroy();
     }
 
+    @Override public void onUserInteraction(){
+        super.onUserInteraction();
+        Log.i(LOGTAG, "UnityPlayerActivity onUserInteraction");
+    }
     // Pause Unity
     @Override protected void onPause()
     {
+        Log.i(LOGTAG, "UnityPlayerActivity onPause");
         super.onPause();
-        mUnityPlayer.pause();
+        //mUnityPlayer.pause();
     }
 
     // Resume Unity
@@ -158,11 +163,11 @@ public class UnityPlayerActivity extends Activity
         super.onResume();
         mUnityPlayer.resume();
 
-        bundle = getIntent().getExtras();
+        /*bundle = getIntent().getExtras();
         String message = bundle.getString("message");
         UnityPlayer.UnitySendMessage("PluginScript", "SetText", message);
 
-        javaGetCoordFunc("Something");
+        javaGetCoordFunc("Something");*/
     }
 
     @Override protected void onStart()

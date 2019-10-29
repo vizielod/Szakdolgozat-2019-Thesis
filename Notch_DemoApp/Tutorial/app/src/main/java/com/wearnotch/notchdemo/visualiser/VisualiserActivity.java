@@ -155,18 +155,21 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
 
     @Override
     protected void onPostResume() {
+        Log.i(LOGTAG, "VisualiserActivity onPostResume");
         super.onPostResume();
         EventBus.getDefault().register(this);
     }
 
     @Override
     protected void onPause() {
+        Log.i(LOGTAG, "VisualiserActivity onPause");
         EventBus.getDefault().unregister(this);
         super.onPause();
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i(LOGTAG, "VisualiserActivity onCreate");
         super.onCreate(savedInstanceState);
         mApplicationContext = getApplicationContext();
         setContentView(R.layout.activity_visualiser);

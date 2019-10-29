@@ -68,21 +68,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10228}
     - Class: 114
-      Script: {instanceID: 10506}
+      Script: {instanceID: 10508}
     - Class: 114
-      Script: {instanceID: 10820}
+      Script: {instanceID: 10822}
     - Class: 114
-      Script: {instanceID: 11010}
+      Script: {instanceID: 11012}
     - Class: 114
-      Script: {instanceID: 11014}
+      Script: {instanceID: 11016}
     - Class: 114
-      Script: {instanceID: 11034}
+      Script: {instanceID: 11036}
     - Class: 114
-      Script: {instanceID: 11224}
+      Script: {instanceID: 11226}
     - Class: 114
-      Script: {instanceID: 11320}
+      Script: {instanceID: 11322}
     - Class: 114
-      Script: {instanceID: 11360}
+      Script: {instanceID: 11362}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -308,6 +308,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: ea741232e1fcf5a24d0bfaef3bca6a2d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DemoRotation
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -596,12 +602,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: ea741232e1fcf5a24d0bfaef3bca6a2d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DemoRotation
   platform: 13
   scenePathNames:
   - Assets/Levels/VRGameScene_Level1.unity

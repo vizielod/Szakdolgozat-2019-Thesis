@@ -6,6 +6,14 @@ using UnityEngine.UI;
 
 public class PluginWrapper : MonoBehaviour
 {
+    private static float LEFTUPPERARM_STARTPOS_DEVIATION_X = 0;
+    private static float LEFTUPPERARM_STARTPOS_DEVIATION_Y = +280f;
+    private static float LEFTUPPERARM_STARTPOS_DEVIATION_Z = +85f;
+
+    private static float RIGHTUPPERARM_STARTPOS_DEVIATION_X = -10f;
+    private static float RIGHTUPPERARM_STARTPOS_DEVIATION_Y = +80f;
+    private static float RIGHTUPPERARM_STARTPOS_DEVIATION_Z = -80f;
+
     private AndroidJavaObject curActivity;
     public string strLog = "No Java Log";
     static PluginWrapper _instance;
@@ -134,8 +142,11 @@ public class PluginWrapper : MonoBehaviour
         {
             Debug.Log("PluginWrapper Update rb meghivva");
             rb = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest").GetComponent<Rigidbody>();
+            Debug.Log(rb.transform.localEulerAngles);
             rb_leftUpperArm = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest/shoulder.L/upper_arm.L").GetComponent<Rigidbody>();
-
+            Debug.Log(rb_leftUpperArm.transform.localEulerAngles);
+            //inputLeftUpperArmRotation = rb_leftUpperArm.transform.localEulerAngles;
+            //Debug.Log(inputLeftUpperArmRotation);
             rb_leftForeArm = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L").GetComponent<Rigidbody>();
 
             rb_rightUpperArm = (Rigidbody)GameObject.Find("ZombiePlayer_Spawn_Postion/Zombie_Player(Clone)/rig/hips/spine/chest/shoulder.R/upper_arm.R").GetComponent<Rigidbody>();
@@ -168,8 +179,17 @@ public class PluginWrapper : MonoBehaviour
         /** LEFT UPPER ARM **/
         if (rb_leftUpperArm)
         {
-            leftUpperArm_inputRotation = new Vector3(leftUpperArmAngleX_f % 360, -leftUpperArmAngleY_f % 360, -leftUpperArmAngleZ_f % 360);
-            //leftUpperArm_inputRotation = new Vector3(inputLeftUpperArmRotation.x % 360, inputLeftUpperArmRotation.y % 360, inputLeftUpperArmRotation.z % 360);
+            leftUpperArm_inputRotation = new Vector3(
+                leftUpperArmAngleX_f + LEFTUPPERARM_STARTPOS_DEVIATION_X % 360, 
+                -leftUpperArmAngleY_f + LEFTUPPERARM_STARTPOS_DEVIATION_Y % 360, 
+                -leftUpperArmAngleZ_f + LEFTUPPERARM_STARTPOS_DEVIATION_Z % 360
+                );
+            /*leftUpperArm_inputRotation = new Vector3(
+            -leftUpperArmAngleX_f  % 360,
+            -leftUpperArmAngleY_f  % 360,
+            -leftUpperArmAngleZ_f  % 360
+            );*/
+            //leftUpperArm_inputRotation = new Vector3(inputLeftUpperArmRotation.x % 360, inputLeftUpperArmRotation.y+280 % 360, -inputLeftUpperArmRotation.z+85 % 360);
             Quaternion rotationY = Quaternion.AngleAxis(leftUpperArm_inputRotation.y, new Vector3(0f, 1f, 0f));
             Quaternion rotationX = Quaternion.AngleAxis(leftUpperArm_inputRotation.x, new Vector3(1f, 0f, 0f));
             Quaternion rotationZ = Quaternion.AngleAxis(leftUpperArm_inputRotation.z, new Vector3(0f, 0f, 1f));     
@@ -189,7 +209,16 @@ public class PluginWrapper : MonoBehaviour
         /** RIGHT UPPER ARM **/
         if (rb_rightUpperArm)
         {
-            rightUpperArm_inputRotation = new Vector3(rightUpperArmAngleX_f % 360, rightUpperArmAngleY_f % 360, rightUpperArmAngleZ_f % 360);
+            rightUpperArm_inputRotation = new Vector3(
+                rightUpperArmAngleX_f + RIGHTUPPERARM_STARTPOS_DEVIATION_X % 360,
+                rightUpperArmAngleY_f + RIGHTUPPERARM_STARTPOS_DEVIATION_Y % 360,
+                rightUpperArmAngleZ_f + RIGHTUPPERARM_STARTPOS_DEVIATION_Z % 360
+                );
+            /*rightUpperArm_inputRotation = new Vector3(
+                rightUpperArmAngleX_f  % 360,
+                rightUpperArmAngleY_f  % 360,
+                rightUpperArmAngleZ_f  % 360
+                );*/
             Quaternion rotationY = Quaternion.AngleAxis(rightUpperArm_inputRotation.y, new Vector3(0f, 1f, 0f));
             Quaternion rotationX = Quaternion.AngleAxis(rightUpperArm_inputRotation.x, new Vector3(1f, 0f, 0f));
             Quaternion rotationZ = Quaternion.AngleAxis(rightUpperArm_inputRotation.z, new Vector3(0f, 0f, 1f));
