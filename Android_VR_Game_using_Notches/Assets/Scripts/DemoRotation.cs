@@ -2,6 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/** 
+ * USED THIS SCRIPT FOR TESTING PURPOSES
+ * Here I was learning how do the followings work and what are the differences between them:
+ * EulerAngles, localEulerAngles
+ * Rotation, localRotation
+ * Quaternion, AngleAxis.
+ * Before I used this knowledge to try it on the Character using the PlayerRotation script,
+ * I was testing everything on a single Cube.
+ * I was learning all these from a Youtube channel called: Chidre'sTechTutorials,
+ * watching his Unity Transform Essentials series: 
+ * https://www.youtube.com/watch?v=UST0SwYGwjs&list=PLdE8ESr9Th_s2iBzpSHck5ICInQWAKRyw
+ * **/
+
 public class DemoRotation : MonoBehaviour
 {
     public float rotationSpeed;

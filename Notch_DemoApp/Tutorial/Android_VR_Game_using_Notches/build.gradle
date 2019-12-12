@@ -25,8 +25,10 @@ apply plugin: 'com.android.library'
 
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'] )
+
     implementation 'com.android.support:support-v4:28.0.0'
+
 }
 
 android {
@@ -39,7 +41,7 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 28
         //applicationId 'com.unity3d.AndroidGameUsingNotches'
         ndk {
@@ -67,10 +69,12 @@ android {
             jniDebuggable true
         }
         release {
-            minifyEnabled false
+            minifyEnabled true
+            proguardFiles.add(file('../../proguard-gvr.txt'))
+            /*minifyEnabled false
             useProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-unity.txt'
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.debug*/
         }
     }
 

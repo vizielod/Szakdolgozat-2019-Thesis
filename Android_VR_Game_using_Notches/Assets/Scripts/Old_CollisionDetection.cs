@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
+/** 
+ * USED THIS SCRIPT FOR TESTING PURPOSES
+ * BACK UP FOR MY COLLISIONDETECTION SCRIPT
+ * **/
+
 public class Old_CollisionDetection : MonoBehaviour
 {
     private Transform wall;
@@ -57,7 +62,7 @@ public class Old_CollisionDetection : MonoBehaviour
     {
         //Debug.Log(wall.GetChildCount());
 
-        if (wall.GetChildCount() > 0)
+        if (wall.childCount > 0)
         {
             currWall_Transform = wall.GetChild(0);
             Debug.Log(currWall_Transform);

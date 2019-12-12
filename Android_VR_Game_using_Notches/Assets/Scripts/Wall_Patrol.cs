@@ -15,7 +15,8 @@ public class Wall_Patrol : MonoBehaviour
         wallDestinationPosition = (Transform)GameObject.Find("Wall_Destination_Position").GetComponent<Transform>();
         parentSpawnerComponent = GetComponentInParent<Spawner>();
         moveSpeed = parentSpawnerComponent.GetMoveSpeed();
-        //moveSpeed = Spawner.GetMoveSpeed();
+        //Debug.Log(moveSpeed);
+        //Debug.Log(parentSpawnerComponent.GetWallAmount());
     }
 
     // Update is called once per frame

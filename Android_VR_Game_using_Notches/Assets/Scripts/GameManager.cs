@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
+/** 
+ * USED THIS SCRIPT FOR TESTING PURPOSES
+ * **/
+
 public class GameManager : MonoBehaviour
 {
     public static Transform playerSpawnPosition;

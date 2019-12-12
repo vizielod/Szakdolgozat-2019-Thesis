@@ -2,6 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/** 
+ * USED THIS SCRIPT FOR TESTING PURPOSES
+ * To create the base of the game I was following this Youtube tutorial:
+ * https://www.youtube.com/watch?v=qwuPiaFU37w
+ * In which this script is needed to move the cube around on the Scene.
+ * I also wanted to test it play around with some random things.
+ * **/
+
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;

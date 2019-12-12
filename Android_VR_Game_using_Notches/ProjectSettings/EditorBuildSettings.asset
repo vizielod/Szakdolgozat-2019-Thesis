@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SingleTextFieldScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Levels/VRGameScene_Level1.unity
+    path: Assets/Scenes/VRMenuScene.unity
+    guid: 5ecb148c889b0b544b6b477780167eec
+  - enabled: 1
+    path: Assets/Levels/VRGameScene_with_Cardboard.unity
     guid: 334e2e2616c611d47b5e4c1eb3326185
   m_configObjects: {}

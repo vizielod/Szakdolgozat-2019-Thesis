@@ -630,7 +630,7 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
         // Calculate chest angles with respect root, i.e. absolute angles
         // The root orientation is the always the same as in the steady pose.
         mData.calculateRelativeAngle(chest, root, frameIndex, chestAngles);
-        //Log.i(LOGTAG, chestAngles.toString());
+        Log.i(LOGTAG, chestAngles.toString());
         RelativeNotchPosition = chestAngles.toString();
         ChestAnteriorTiltAngle = chestAngles.get(0);
         ChestRotationAngle = chestAngles.get(1);
@@ -678,6 +678,7 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
                 .append("Lateral tilt left(-)/right(+): ").append((int)chestAngles.get(2)).append("°\n");
 
         mAnglesText.setText(sb.toString());
+        Log.i(LOGTAG, sb.toString());
     }
 
     public void showNotification(final int stringId) {
@@ -983,7 +984,7 @@ public class VisualiserActivity extends AppCompatActivity implements SeekBar.OnS
                     //Log.i(LOGTAG, mData.toString());
                     refreshAngles();
                     //calculateAngles(mFrameIndex);
-                    //Log.i(LOGTAG, RelativeNotchPosition);
+                    Log.i(LOGTAG, RelativeNotchPosition);
                     updateRealTime();
                 }
             }

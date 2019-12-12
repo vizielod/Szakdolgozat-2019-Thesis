@@ -12,7 +12,6 @@ import android.view.WindowManager;
 
 import com.unity3d.player.UnityPlayer;
 
-
 public class UnityPlayerActivity extends Activity
 {
     protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
@@ -62,6 +61,7 @@ public class UnityPlayerActivity extends Activity
         //UnityPlayer.UnitySendMessage("PluginScript", "SetText", message);
         //UnityPlayer.UnitySendMessage("PluginScript", "SetJavaLog", strFromUnity + "HelloWorld");
         UnityPlayer.UnitySendMessage("PluginScript", "SetJavaLog", message);
+        //UnityPlayer.UnitySendMessage("MenuPluginScript", "SetJavaLog", message);
         //Log.i(LOGTAG, strFromUnity + "javaTestFunc called");
     }
 
@@ -140,6 +140,7 @@ public class UnityPlayerActivity extends Activity
     // Quit Unity
     @Override protected void onDestroy ()
     {
+        //mUnityPlayer.quit();
         mUnityPlayer.destroy();
         super.onDestroy();
     }

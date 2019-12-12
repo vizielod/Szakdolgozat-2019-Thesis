@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Levels/VRGameScene_Level1.unity
+- path: Assets/Levels/VRGameScene_with_Cardboard.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

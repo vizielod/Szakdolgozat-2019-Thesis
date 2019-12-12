@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/** 
+ * USED THIS SCRIPT FOR TESTING PURPOSES
+ * **/
+
 public class PrefabCollisionDetection : MonoBehaviour
 {
     private Transform wall;

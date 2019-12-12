@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/** 
+ * USED THIS SCRIPT FOR TESTING PURPOSES
+ * **/
 public class CharacterMovement : MonoBehaviour
 {
     static CharacterMovement _instance;

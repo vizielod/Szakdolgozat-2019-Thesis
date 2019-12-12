@@ -7,11 +7,18 @@ public class PlayerManager : MonoBehaviour
 {
     public GameObject player;
     public GameObject crashParticles;
+    public static int playerLifeAmount = 3;
+    public int defaultPlayerLifeAmount = 3;
     private bool playerRespawned = true;
 
     public GameObject GetPlayerGameObject()
     {
         return player;
+    }
+
+    public int GetDefaultLifeAmount()
+    {
+        return defaultPlayerLifeAmount;
     }
 
     public void SetPlayerGameObject(GameObject newPlayer)
@@ -39,4 +46,13 @@ public class PlayerManager : MonoBehaviour
         return playerRespawned;
     }
 
+    public int GetPlayerLifeAmount()
+    {
+        return playerLifeAmount;
+    }
+
+    public void SetPlayerLifeAmount(int newPlayerLifeAmount)
+    {
+        playerLifeAmount = newPlayerLifeAmount;
+    }
 }

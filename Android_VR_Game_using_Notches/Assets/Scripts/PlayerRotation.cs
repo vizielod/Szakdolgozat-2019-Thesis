@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/** 
+ * USED THIS SCRIPT FOR TESTING PURPOSES
+ * I was testing the rotation of the character's bodypart
+ * with lot of different variations. Tried to limit the axes.
+ * Finnaly figured it out that no limitations needed in this case,
+ * because it is a real life situation where the body follows
+ * a real human body movement, so for example it is impossible
+ * to rotate the trunk (chest) more than 80-110 degrees.
+ * **/
+
 public class PlayerRotation : MonoBehaviour
 {
     public float rotationSpeed;
@@ -17,8 +27,8 @@ public class PlayerRotation : MonoBehaviour
     private Vector3 spawn;
 
     static PlayerRotation _instance;
+    private CollisionDetection collisionDetection;
 
-    
 
     public static PlayerRotation GetInstance()
     {
@@ -37,8 +47,12 @@ public class PlayerRotation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>(); 
-        //Debug.Log(rb);
+        rb = GetComponent<Rigidbody>();
+        if (GameObject.Find("Wall_spawner").GetComponentInChildren<CollisionDetection>())
+        {
+            collisionDetection = (CollisionDetection)GameObject.Find("Wall_spawner").GetComponentInChildren<CollisionDetection>();
+        }
+        Debug.Log(collisionDetection);
         //inputRotation = new Vector3(0, Input.GetAxisRaw("Vertical"), 0);
     }
 
@@ -54,53 +68,57 @@ public class PlayerRotation : MonoBehaviour
 
         //rb.transform.rotation = new Quaternion(Mathf.Clamp(wantaBeRot.x, xCon.x, xCon.y), rb.transform.rotation.y, rb.transform.rotation.z, rb.transform.rotation.w);
         //rb.transform.Rotate(Mathf.Clamp(inputRotation.x * Time.deltaTime * rotationSpeed, 0, 130), inputRotation.y * Time.deltaTime * rotationSpeed, inputRotation.z * Time.deltaTime * rotationSpeed);
-        if (rb.name == "chest")
+        if (!collisionDetection.IsRagdoll())
         {
-            chestRotX = rb.transform.rotation.eulerAngles.x;
-            chestRotY = rb.transform.rotation.eulerAngles.y;
-            chestRotZ = rb.transform.rotation.eulerAngles.z;
-            //Debug.Log(rb.transform.localEulerAngles);
+            Debug.Log("IsRagdoll");
+            if (rb.name == "chest")
+            {
+                chestRotX = rb.transform.rotation.eulerAngles.x;
+                chestRotY = rb.transform.rotation.eulerAngles.y;
+                chestRotZ = rb.transform.rotation.eulerAngles.z;
+                //Debug.Log(rb.transform.localEulerAngles);
+                if ((rb.transform.localEulerAngles.y >= 280f || rb.transform.localEulerAngles.y <= 80f)
+                    && (rb.transform.localEulerAngles.x >= 300f || rb.transform.localEulerAngles.x <= 60f)
+                    && (rb.transform.localEulerAngles.z >= 300f || rb.transform.localEulerAngles.z <= 60f))
+                {
+                    inputRotation = new Vector3(Input.GetAxisRaw("Vertical"), 0.0f, -Input.GetAxisRaw("Horizontal"));
+                }
+                else if (rb.transform.localEulerAngles.y < 280f && inputRotation.y < 0)
+                {
+                    rb.transform.localEulerAngles = new Vector3(rb.transform.localEulerAngles.x, rb.transform.localEulerAngles.y + 1f, rb.transform.localEulerAngles.z);
+                    inputRotation = new Vector3(0.0f, 0, 0.0f);
+                }
+                else if (rb.transform.localEulerAngles.y > 80f && inputRotation.y > 0)
+                {
+                    rb.transform.localEulerAngles = new Vector3(rb.transform.localEulerAngles.x, rb.transform.localEulerAngles.y - 1f, rb.transform.localEulerAngles.z);
+                    inputRotation = new Vector3(0.0f, 0, 0.0f);
+                }
+                else if (rb.transform.localEulerAngles.x < 300f && inputRotation.x < 0)
+                {
+                    rb.transform.localEulerAngles = new Vector3(rb.transform.localEulerAngles.x + 1f, rb.transform.localEulerAngles.y, rb.transform.localEulerAngles.z);
+                    inputRotation = new Vector3(0.0f, 0, 0.0f);
+                }
+                else if (rb.transform.localEulerAngles.x > 60f && inputRotation.x > 0)
+                {
+                    rb.transform.localEulerAngles = new Vector3(rb.transform.localEulerAngles.x - 1f, rb.transform.localEulerAngles.y, rb.transform.localEulerAngles.z);
+                    inputRotation = new Vector3(0.0f, 0, 0.0f);
+                }
+                else if (rb.transform.localEulerAngles.z < 300f && inputRotation.z < 0)
+                {
+                    rb.transform.localEulerAngles = new Vector3(rb.transform.localEulerAngles.x, rb.transform.localEulerAngles.y, rb.transform.localEulerAngles.z + 1f);
+                    inputRotation = new Vector3(0.0f, 0, 0.0f);
+                }
+                else if (rb.transform.localEulerAngles.z > 60f && inputRotation.z > 0)
+                {
+                    rb.transform.localEulerAngles = new Vector3(rb.transform.localEulerAngles.x, rb.transform.localEulerAngles.y, rb.transform.localEulerAngles.z - 1f);
+                    inputRotation = new Vector3(0.0f, 0, 0.0f);
+                }
+                else
+                    inputRotation = new Vector3(Input.GetAxisRaw("Vertical"), 0.0f, -Input.GetAxisRaw("Horizontal"));
 
-            if ((rb.transform.localEulerAngles.y >= 280f || rb.transform.localEulerAngles.y <= 80f) 
-                && (rb.transform.localEulerAngles.x >= 300f || rb.transform.localEulerAngles.x <= 60f) 
-                && (rb.transform.localEulerAngles.z >= 300f || rb.transform.localEulerAngles.z <= 60f))
-            {
-                inputRotation = new Vector3(Input.GetAxisRaw("Vertical"), 0.0f, -Input.GetAxisRaw("Horizontal"));
             }
-            else if (rb.transform.localEulerAngles.y < 280f && inputRotation.y < 0)
-            {
-                rb.transform.localEulerAngles = new Vector3(rb.transform.localEulerAngles.x, rb.transform.localEulerAngles.y+1f, rb.transform.localEulerAngles.z);
-                inputRotation = new Vector3(0.0f, 0, 0.0f);
-            }
-            else if (rb.transform.localEulerAngles.y > 80f && inputRotation.y > 0)
-            {
-                rb.transform.localEulerAngles = new Vector3(rb.transform.localEulerAngles.x, rb.transform.localEulerAngles.y-1f, rb.transform.localEulerAngles.z);
-                inputRotation = new Vector3(0.0f, 0, 0.0f);
-            }
-            else if (rb.transform.localEulerAngles.x < 300f && inputRotation.x < 0)
-            {
-                rb.transform.localEulerAngles = new Vector3(rb.transform.localEulerAngles.x+1f, rb.transform.localEulerAngles.y, rb.transform.localEulerAngles.z);
-                inputRotation = new Vector3(0.0f, 0, 0.0f);
-            }
-            else if (rb.transform.localEulerAngles.x > 60f && inputRotation.x > 0)
-            {
-                rb.transform.localEulerAngles = new Vector3(rb.transform.localEulerAngles.x-1f, rb.transform.localEulerAngles.y, rb.transform.localEulerAngles.z);
-                inputRotation = new Vector3(0.0f, 0, 0.0f);
-            }
-            else if (rb.transform.localEulerAngles.z < 300f && inputRotation.z < 0)
-            {
-                rb.transform.localEulerAngles = new Vector3(rb.transform.localEulerAngles.x, rb.transform.localEulerAngles.y, rb.transform.localEulerAngles.z+1f);
-                inputRotation = new Vector3(0.0f, 0, 0.0f);
-            }
-            else if (rb.transform.localEulerAngles.z > 60f && inputRotation.z > 0)
-            {
-                rb.transform.localEulerAngles = new Vector3(rb.transform.localEulerAngles.x, rb.transform.localEulerAngles.y, rb.transform.localEulerAngles.z-1f);
-                inputRotation = new Vector3(0.0f, 0, 0.0f);
-            }
-            else
-                inputRotation = new Vector3(Input.GetAxisRaw("Vertical"), 0.0f, -Input.GetAxisRaw("Horizontal"));
-
         }
+        
         Quaternion rotationY = Quaternion.AngleAxis(inputRotation.y * Time.deltaTime * rotationSpeed, new Vector3(0f, 1f, 0f));
         Quaternion rotationX = Quaternion.AngleAxis(inputRotation.x * Time.deltaTime * rotationSpeed, new Vector3(1f, 0f, 0f));
         Quaternion rotationZ = Quaternion.AngleAxis(inputRotation.z * Time.deltaTime * rotationSpeed, new Vector3(0f, 0f, 1f));

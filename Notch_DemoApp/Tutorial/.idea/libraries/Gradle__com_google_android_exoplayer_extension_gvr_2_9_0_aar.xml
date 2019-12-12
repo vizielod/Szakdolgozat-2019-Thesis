@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.exoplayer:extension-gvr:2.9.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b227d9b59f6e0bb32bb10dc2e9a676f/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b227d9b59f6e0bb32bb10dc2e9a676f/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/extension-gvr/2.9.0/667de5dd34e5c38bfec9590d524ac0df32eb1def/extension-gvr-2.9.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
